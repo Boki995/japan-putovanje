@@ -2,8 +2,10 @@
  {
   "date": "2026-10-07",
   "best": {
-   "BEG-TYO": 970,
-   "BEG-OSA": 974
+   "BUD-TYO": 998,
+   "BUD-OSA": 1071,
+   "BEG-OSA": 974,
+   "BEG-TYO": 970
   }
  }
 ]
