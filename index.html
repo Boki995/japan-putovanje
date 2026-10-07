@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="sr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Japan 2027 letovi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: boarding-pass header, 4 route tiles, trend chart, check log, quick-search links */
+:root{
+  --bg:#f5f6f9; --surface:#ffffff; --fg:#1b2033; --muted:#5e6580; --line:#dde0ea;
+  --accent:#27408b; --accent-soft:#e6eaf6; --target:#c2415d;
+  --good:#1f7a4d; --good-soft:#e2f3ea; --warn:#a2650c; --warn-soft:#fbf0dc; --bad:#9a2f3f; --bad-soft:#f8e4e7;
+  --c1:#27408b; --c2:#c2415d; --c3:#1f8a8a; --c4:#b07a12;
+  --display:"Zen Kaku Gothic New","Hiragino Sans",system-ui,sans-serif;
+  --body:"IBM Plex Sans",system-ui,-apple-system,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#11141f; --surface:#191d2c; --fg:#e7e9f2; --muted:#9aa1bb; --line:#2c3247;
+  --accent:#8ea6f0; --accent-soft:#232c4a; --target:#ef7d97;
+  --good:#6fd39f; --good-soft:#173328; --warn:#efb75a; --warn-soft:#352a14; --bad:#f08a9a; --bad-soft:#3a1c23;
+  --c1:#8ea6f0; --c2:#ef7d97; --c3:#5fcfcf; --c4:#e3b45a; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#11141f; --surface:#191d2c; --fg:#e7e9f2; --muted:#9aa1bb; --line:#2c3247;
+  --accent:#8ea6f0; --accent-soft:#232c4a; --target:#ef7d97;
+  --good:#6fd39f; --good-soft:#173328; --warn:#efb75a; --warn-soft:#352a14; --bad:#f08a9a; --bad-soft:#3a1c23;
+  --c1:#8ea6f0; --c2:#ef7d97; --c3:#5fcfcf; --c4:#e3b45a; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font:15px/1.5 var(--body);padding:24px 16px 48px}
+.wrap{max-width:1040px;margin:0 auto;display:grid;gap:28px}
+h1,h2{font-family:var(--display);text-wrap:balance;margin:0}
+h1{font-size:clamp(28px,5vw,40px);font-weight:900;letter-spacing:-.01em}
+h2{font-size:18px;font-weight:700}
+.eyebrow{font:500 11px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+.pass{background:var(--surface);border:1px solid var(--line);border-radius:14px;display:grid;grid-template-columns:1fr auto;overflow:hidden}
+.pass-main{padding:22px 24px;display:grid;gap:14px;min-width:0}
+.pass-stub{border-left:2px dashed var(--line);padding:22px 24px;display:grid;align-content:center;gap:4px;text-align:right;background:var(--accent-soft)}
+.route-line{display:flex;align-items:center;gap:14px;flex-wrap:wrap;font-family:var(--display);font-weight:700;font-size:20px}
+.route-line .arrow{color:var(--target);font-weight:400}
+.route-line small{display:block;font:400 12px var(--body);color:var(--muted)}
+.facts{display:flex;flex-wrap:wrap;gap:8px 22px}
+.fact{display:grid;gap:2px}
+.fact b{font:500 14px var(--mono)}
+.stub-num{font:500 34px/1 var(--mono);color:var(--target)}
+@media (max-width:640px){.pass{grid-template-columns:1fr}.pass-stub{border-left:0;border-top:2px dashed var(--line);text-align:left}}
+
+.status{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:baseline;color:var(--muted);font-size:13px}
+.banner{padding:12px 16px;border-radius:10px;background:var(--good-soft);color:var(--good);font-weight:600}
+
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.tile{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px 18px;display:grid;gap:10px;align-content:start}
+.tile-head{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.code{font:700 17px var(--display)}
+.code i{font-style:normal;color:var(--muted);font-weight:500}
+.price{font:500 26px/1.1 var(--mono)}
+.price small{font-size:13px;color:var(--muted)}
+.sub{font-size:13px;color:var(--muted)}
+.pill{font:500 11px/1 var(--mono);padding:5px 8px;border-radius:99px;white-space:nowrap}
+.pill.good{background:var(--good-soft);color:var(--good)}
+.pill.warn{background:var(--warn-soft);color:var(--warn)}
+.pill.bad{background:var(--bad-soft);color:var(--bad)}
+.pill.none{background:var(--accent-soft);color:var(--muted)}
+.swatch{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px;vertical-align:baseline}
+
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:18px;display:grid;gap:12px;min-width:0}
+.chart-box{overflow-x:auto}
+svg text{fill:var(--muted);font:11px var(--mono)}
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:13px}
+
+.table-box{overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:640px;font-size:13px}
+th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+td.num{font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+
+.links{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px}
+.links a{display:flex;justify-content:space-between;gap:8px;padding:10px 12px;border:1px solid var(--line);border-radius:8px;text-decoration:none;background:var(--bg);font-size:14px}
+.links a span{color:var(--muted);font:12px var(--mono)}
+.empty{padding:28px;text-align:center;color:var(--muted);border:1px dashed var(--line);border-radius:12px}
+.foot{font-size:12px;color:var(--muted);max-width:70ch}
+.btn{justify-self:start;display:inline-block;margin-top:4px;padding:8px 14px;border-radius:8px;background:var(--accent);color:var(--surface);font-weight:600;text-decoration:none;font-size:14px}
+.btn:hover{filter:brightness(1.1)}
+select{font:inherit;padding:4px 8px;border-radius:6px;border:1px solid var(--line);background:var(--bg);color:var(--fg);margin-left:6px}
+.banner a{color:inherit}
+.cmp a,.cmpcell a{white-space:nowrap}
+.cmpcell{font-size:12px;min-width:180px}
+table{min-width:880px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header style="display:grid;gap:10px">
+    <div class="eyebrow">Praćenje cena · dnevno</div>
+    <h1>Japan 2027 letovi</h1>
+  </header>
+
+  <section class="pass" aria-label="Kriterijumi pretrage">
+    <div class="pass-main">
+      <div class="route-line">
+        <div>BEG / BUD<small>Beograd ili Budimpešta</small></div>
+        <span class="arrow">⇄</span>
+        <div>TYO / OSA<small>Tokio (HND, NRT) ili Osaka (KIX)</small></div>
+      </div>
+      <div class="facts">
+        <div class="fact"><span class="eyebrow">Polazak</span><b id="f-window">10.04 – 15.05.2027</b></div>
+        <div class="fact"><span class="eyebrow">Boravak</span><b id="f-stays">15 / 18 / 21 dan</b></div>
+        <div class="fact"><span class="eyebrow">Putnici</span><b id="f-adults">6 odraslih</b></div>
+        <div class="fact"><span class="eyebrow">Tip</span><b>povratna</b></div>
+      </div>
+    </div>
+    <div class="pass-stub">
+      <span class="eyebrow">Ciljna cena</span>
+      <span class="stub-num" id="f-target">≤ €750</span>
+      <span class="sub" id="f-target-total">po osobi</span>
+    </div>
+  </section>
+
+  <div id="status" class="status"><span>Učitavam podatke…</span></div>
+  <div id="banner" class="banner" hidden></div>
+
+  <section style="display:grid;gap:12px">
+    <h2>Najjeftinija karta po ruti</h2>
+    <div id="tiles" class="tiles">
+      <div class="empty" style="grid-column:1/-1">Ovde se pojavljuju najjeftinije karte posle prve provere. Pokreni je ručno u GitHub-u: Actions → Dnevna provera cena → Run workflow.</div>
+    </div>
+  </section>
+
+  <section class="panel">
+    <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;align-items:baseline">
+      <h2>Kretanje najniže cene</h2>
+      <span class="sub">€ po osobi, povratna · isprekidana linija = cilj</span>
+    </div>
+    <div id="legend" class="legend"></div>
+    <div id="chart" class="chart-box"><div class="empty">Grafikon se crta kad se skupe bar dve provere.</div></div>
+  </section>
+
+  <section class="panel">
+    <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;align-items:baseline">
+      <h2>30 najjeftinijih termina</h2>
+      <label class="sub" for="routeFilter">Ruta
+        <select id="routeFilter"><option value="">sve</option></select>
+      </label>
+    </div>
+    <div id="combos" class="table-box"><div class="empty">Još nema proverenih termina.</div></div>
+  </section>
+
+  <p class="foot" id="srcnote">Izvori: Google Flights (tačan termin, cena za sve putnike) i Aviasales (najjeftinije karte koje su drugi našli u poslednjih nekoliko dana, cena za 1 putnika, pa za 6 može biti viša). Dugmad „Uporedi“ otvaraju Skyscanner, Kayak i Momondo sa istim datumima i 6 putnika. Cena se menja iz sata u sat, pa je pre kupovine uvek proveri preko dugmeta „Otvori kartu“. Google Flights proverava 8 termina dnevno i obiđe ceo prozor za oko dve nedelje.</p>
+</div>
+
+<script>
+const ROUTES=[
+  {id:"BEG-TYO",from:"Beograd",to:"Tokio",color:"var(--c1)"},
+  {id:"BEG-OSA",from:"Beograd",to:"Osaka",color:"var(--c2)"},
+  {id:"BUD-TYO",from:"Budimpešta",to:"Tokio",color:"var(--c3)"},
+  {id:"BUD-OSA",from:"Budimpešta",to:"Osaka",color:"var(--c4)"}
+];
+let TARGET=750, ADULTS=6;
+const $=s=>document.querySelector(s);
+const eur=n=>n==null?"–":"€"+Math.round(n).toLocaleString("sr-RS");
+const d8=d=>{const [y,m,dd]=d.split("-");return `${dd}.${m}.${y}`};
+const d5=d=>`${d.slice(8)}.${d.slice(5,7)}.`;
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const safe=u=>/^https:\/\//.test(u||"")?esc(u):"#";
+const dur=m=>m?`${Math.floor(m/60)}h ${m%60}m`:"";
+const days=(a,b)=>Math.round((new Date(b)-new Date(a))/864e5);
+function cmp(c){if(!c)return"";const L=[["skyscanner","Skyscanner"],["kayak","Kayak"],["momondo","Momondo"],["google","Google Flights"],["aviasales","Aviasales"]];return L.filter(([k])=>c[k]).map(([k,n])=>`<a href="${safe(c[k])}" target="_blank" rel="noopener">${n}</a>`).join(" · ")}
+function pill(v){
+  if(v==null) return '<span class="pill none">nema podatka</span>';
+  if(v<=TARGET) return '<span class="pill good">ispod cilja</span>';
+  if(v<=TARGET*1.15) return '<span class="pill warn">blizu cilja</span>';
+  return '<span class="pill bad">iznad cilja</span>';
+}
+ROUTES.forEach(r=>$("#routeFilter").insertAdjacentHTML("beforeend",`<option value="${r.id}">${r.id}</option>`));
+
+async function getJSON(p){try{const r=await fetch(p+"?t="+Date.now(),{cache:"no-store"});return r.ok?await r.json():null}catch(e){return null}}
+
+let LATEST=null;
+async function boot(){
+  const [latest,history]=await Promise.all([getJSON("data/latest.json"),getJSON("data/history.json")]);
+  LATEST=latest;
+  if(!latest||!latest.best){$("#status").innerHTML="<span>Još nema podataka. Prva provera stiže sa prvim pokretanjem.</span>";return;}
+  const c=latest.config||{};
+  TARGET=c.target||TARGET; ADULTS=c.adults||ADULTS;
+  $("#f-target").textContent="≤ €"+TARGET;
+  $("#f-target-total").textContent=`po osobi · ≤ ${eur(TARGET*ADULTS)} za ${ADULTS}`;
+  $("#f-adults").textContent=ADULTS+" odraslih";
+  if(c.window) $("#f-window").textContent=`${d5(c.window[0])} – ${d8(c.window[1])}`;
+  if(c.stays) $("#f-stays").textContent=c.stays.join(" / ")+" dana";
+
+  const best=latest.best;
+  const list=Object.entries(best).map(([id,v])=>({id,...v})).sort((a,b)=>a.per_person-b.per_person);
+  const top=list[0];
+  $("#status").innerHTML=`<span>Ažurirano: <b class="mono">${esc(new Date(latest.updated).toLocaleString("sr-RS"))}</b></span><span>Izvori: <b>${esc((c.sources||[]).join(", ")||"–")}</b></span><span>Google Flights termina: <b class="mono">${c.combos_checked||0} / ${c.combos_total||"?"}</b></span>${top?`<span>Najbolje: <b>${esc(top.id)}</b> <b class="mono">${eur(top.per_person)}</b> po osobi</span>`:""}`;
+  if(top&&top.per_person<=TARGET){const b=$("#banner");b.hidden=false;b.innerHTML=`Cena ispod cilja: ${esc(top.id)} ${eur(top.per_person)} po osobi, ${d8(top.dep)} → ${d8(top.ret)}. <a href="${safe(top.url)}" target="_blank" rel="noopener">Otvori kartu →</a>`;}
+
+  $("#tiles").innerHTML=ROUTES.map(R=>{
+    const r=best[R.id];
+    if(!r) return `<article class="tile"><div class="code"><span class="swatch" style="background:${R.color}"></span>${R.id.replace("-"," → ")} <i>${R.from} – ${R.to}</i></div>${pill(null)}<div class="sub">Nema leta u proverenim terminima.</div></article>`;
+    return `<article class="tile">
+      <div class="code"><span class="swatch" style="background:${R.color}"></span>${R.id.replace("-"," → ")} <i>${R.from} – ${R.to}</i></div>
+      <div>${pill(r.per_person)}</div>
+      <div class="price">${eur(r.per_person)} <small>po osobi</small></div>
+      <div class="sub"><span class="mono">${eur(r.total)}</span> za ${ADULTS} · povratna</div>
+      <div class="sub mono">${d8(r.dep)} → ${d8(r.ret)} · ${days(r.dep,r.ret)} dana</div>
+      <div class="sub">${esc(r.airlines)} · ${r.stops===0?"direktan":r.stops+" presedanj"+(r.stops===1?"e":"a")}${r.via?" ("+esc(r.via)+")":""}${r.duration_min?" · "+dur(r.duration_min):""}</div>
+      <div class="sub">${esc(r.from_airport)} → ${esc(r.to_airport)} · provereno ${d8(r.checked)}</div>
+      <div class="sub">Izvor: <b>${esc(r.source||"Google Flights")}</b>${r.note?" ("+esc(r.note)+")":""}</div>
+      <a class="btn" href="${safe(r.url)}" target="_blank" rel="noopener">Otvori kartu →</a>
+      ${r.compare?`<div class="sub cmp">Uporedi: ${cmp(r.compare)}</div>`:""}
+    </article>`}).join("");
+
+  renderCombos();
+  renderChart(history||[]);
+}
+
+function renderCombos(){
+  const f=$("#routeFilter").value;
+  const rows=[];
+  Object.values(LATEST.combos||{}).forEach(c=>Object.entries(c.routes||{}).forEach(([id,v])=>{if(!f||f===id)rows.push({id,dep:c.dep,ret:c.ret,checked:c.checked,...v})}));
+  ((LATEST.aviasales||{}).deals||[]).forEach(d=>{if(!f||f===d.route)rows.push({id:d.route,checked:LATEST.aviasales.checked,...d})});
+  rows.sort((a,b)=>a.per_person-b.per_person);
+  if(!rows.length){$("#combos").innerHTML='<div class="empty">Još nema proverenih termina.</div>';return;}
+  $("#combos").innerHTML=`<table><thead><tr><th>Ruta</th><th>Polazak → povratak</th><th>Po osobi</th><th>Za ${ADULTS}</th><th>Kompanije</th><th>Izvor</th><th>Provereno</th><th>Karta</th><th>Uporedi</th></tr></thead><tbody>${
+    rows.slice(0,30).map(r=>`<tr><td class="num">${esc(r.id)}</td><td class="num">${d8(r.dep)} → ${d8(r.ret)} <span class="sub">(${days(r.dep,r.ret)}d)</span></td><td class="num">${eur(r.per_person)}${r.per_person<=TARGET?" ✓":""}</td><td class="num">${eur(r.total)}</td><td>${esc(r.airlines)}</td><td>${esc(r.source||"Google Flights")}</td><td class="num">${d5(r.checked)}</td><td><a href="${safe(r.url)}" target="_blank" rel="noopener">Otvori&nbsp;kartu</a></td><td class="cmpcell">${cmp(r.compare)}</td></tr>`).join("")
+  }</tbody></table>`;
+}
+$("#routeFilter").addEventListener("change",()=>LATEST&&renderCombos());
+
+function renderChart(h){
+  $("#legend").innerHTML=ROUTES.map(r=>`<span><span class="swatch" style="background:${r.color}"></span>${r.id}</span>`).join("");
+  if(h.length<2) return;
+  const W=Math.max(640,h.length*28),H=260,P={l:52,r:16,t:14,b:30};
+  const vals=h.flatMap(x=>Object.values(x.best||{})).concat([TARGET]);
+  const lo=Math.floor((Math.min(...vals)-50)/100)*100,hi=Math.ceil((Math.max(...vals)+50)/100)*100;
+  const x=i=>P.l+i*(W-P.l-P.r)/(h.length-1),y=v=>P.t+(hi-v)*(H-P.t-P.b)/(hi-lo);
+  let s=`<svg viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="img" aria-label="Kretanje cena">`;
+  const step=(hi-lo)>600?200:100;
+  for(let v=lo;v<=hi;v+=step)s+=`<line x1="${P.l}" x2="${W-P.r}" y1="${y(v)}" y2="${y(v)}" stroke="var(--line)"/><text x="${P.l-6}" y="${y(v)+4}" text-anchor="end">€${v}</text>`;
+  s+=`<line x1="${P.l}" x2="${W-P.r}" y1="${y(TARGET)}" y2="${y(TARGET)}" stroke="var(--target)" stroke-dasharray="5 4" stroke-width="1.5"/>`;
+  const every=Math.ceil(h.length/10);
+  h.forEach((c,i)=>{if(i%every===0||i===h.length-1)s+=`<text x="${x(i)}" y="${H-8}" text-anchor="middle">${d5(c.date)}</text>`});
+  ROUTES.forEach(R=>{
+    const pts=h.map((c,i)=>c.best&&c.best[R.id]!=null?[x(i),y(c.best[R.id])]:null).filter(Boolean);
+    if(!pts.length)return;
+    s+=`<polyline fill="none" stroke="${R.color}" stroke-width="2" points="${pts.map(p=>p.join(",")).join(" ")}"/>`;
+    const e=pts[pts.length-1];s+=`<circle cx="${e[0]}" cy="${e[1]}" r="4" fill="${R.color}"/>`;
+  });
+  $("#chart").innerHTML=s+"</svg>";
+}
+boot();
+</script>
+</body>
+</html>
