@@ -25,7 +25,7 @@ from datetime import date, datetime, timedelta, timezone
 ORIGINS = ["BEG", "BUD"]
 DESTS = ["HND", "NRT", "KIX"]
 CITY = {"HND": "TYO", "NRT": "TYO", "TYO": "TYO", "KIX": "OSA", "ITM": "OSA", "OSA": "OSA"}
-FIRST_DEPARTURE = date(2027, 4, 10)
+FIRST_DEPARTURE = date(2027, 3, 1)
 LAST_DEPARTURE = date(2027, 5, 15)
 MIN_STAY = 15
 MAX_STAY = 30                     # Aviasales: preskoči duže boravke (stavi 999 za bez ograničenja)
@@ -38,8 +38,9 @@ PRICE_IS_TOTAL = os.getenv("PRICE_IS_TOTAL", "true").lower() == "true"
 ROUTES = ["BEG-TYO", "BEG-OSA", "BUD-TYO", "BUD-OSA"]
 # Aviasales čuva cene po "tržištima" (zemlja korisnika koji je tražio). Podrazumevano je samo "ru",
 # zato pitamo više tržišta i uzimamo najjeftinije.
-AVIASALES_MARKETS = ["ru", "us", "de", "gb", "it", "pl", "hu", "rs", "kz", "tr", "ae"]
-KEEP_DAYS = 21                    # koliko dugo važi stara cena za "najbolje"
+# (provereno: API trenutno vraća iste podatke za sva tržišta, pa pitamo samo jedno)
+AVIASALES_MARKETS = ["ru"]
+KEEP_DAYS = 30                    # koliko dugo važi stara cena za "najbolje"
 # ---------------------------------------------
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -160,7 +161,9 @@ def parse_serpapi(resp, dep, ret):
 def run_serpapi(key, state, latest, today):
     combos = all_combos()
     cur = state.get("cursor", 0) % len(combos)
-    batch = [combos[(cur + i) % len(combos)] for i in range(min(SEARCHES_PER_RUN, len(combos)))]
+    # preskačemo kroz prozor (korak 41), da svaki dan pokrije i april i maj, a ne samo nekoliko susednih dana
+    step = 41 if len(combos) % 41 else 1
+    batch = [combos[((cur + i) * step) % len(combos)] for i in range(min(SEARCHES_PER_RUN, len(combos)))]
     state["cursor"] = (cur + len(batch)) % len(combos)
     found = []
     for dep, ret in batch:
@@ -171,7 +174,15 @@ def run_serpapi(key, state, latest, today):
                 log_error(f"Google Flights {k}: {resp['error']}"); continue
             routes = parse_serpapi(resp, dep, ret)
         except Exception as e:
-            log_error(f"Google Flights {k}: {e}"); continue
+            hint = ""
+            if "401" in str(e):
+                hint = (f" | Ključ ima {len(key)} znakova, a SerpApi ključ ima 64. "
+                        "Uzmi ga sa serpapi.com/manage-api-key (ne sa serper.dev).")
+            log_error(f"Google Flights {k}: {e}{hint}")
+            if "401" in str(e):
+                state["cursor"] = cur   # ponovi iste termine kad ključ proradi
+                break                   # ključ ne radi, ne troši ostale pretrage
+            continue
         latest["combos"][k] = {"dep": dep, "ret": ret, "checked": today, "routes": routes}
         print("Google Flights", k, {r: v["per_person"] for r, v in routes.items()})
         found += [{"route": r, **v} for r, v in routes.items()]
@@ -290,7 +301,8 @@ def notify(alerts, today):
 
 
 def main():
-    serp_key, tp_token = os.getenv("SERPAPI_KEY"), os.getenv("TRAVELPAYOUTS_TOKEN")
+    clean = lambda v: (v or "").strip().strip('"').strip("'").strip() or None
+    serp_key, tp_token = clean(os.getenv("SERPAPI_KEY")), clean(os.getenv("TRAVELPAYOUTS_TOKEN"))
     if not serp_key and not tp_token:
         sys.exit("Nema nijednog ključa. Dodaj SERPAPI_KEY i/ili TRAVELPAYOUTS_TOKEN u Settings → Secrets → Actions.")
     os.makedirs(DATA, exist_ok=True)
