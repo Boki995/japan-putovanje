@@ -206,7 +206,7 @@
    "checked": "2026-10-07"
   }
  },
- "updated": "2026-10-07T14:08+00:00",
+ "updated": "2026-10-07T14:10+00:00",
  "config": {
   "adults": 6,
   "target": 750.0,
@@ -228,13 +228,13 @@
   ]
  },
  "errors": [
-  "Google Flights 2027-04-15_2027-05-03: HTTP 401: {\n  \"error\": \"Invalid API key. Your API key should be here: https://serpapi.com/manage-api-key\"\n}",
-  "Google Flights 2027-04-15_2027-05-06: HTTP 401: {\n  \"error\": \"Invalid API key. Your API key should be here: https://serpapi.com/manage-api-key\"\n}",
-  "Google Flights 2027-04-16_2027-05-01: HTTP 401: {\n  \"error\": \"Invalid API key. Your API key should be here: https://serpapi.com/manage-api-key\"\n}",
-  "Google Flights 2027-04-16_2027-05-04: HTTP 401: {\n  \"error\": \"Invalid API key. Your API key should be here: https://serpapi.com/manage-api-key\"\n}",
-  "Google Flights 2027-04-16_2027-05-07: HTTP 401: {\n  \"error\": \"Invalid API key. Your API key should be here: https://serpapi.com/manage-api-key\"\n}",
-  "Google Flights 2027-04-17_2027-05-02: HTTP 401: {\n  \"error\": \"Invalid API key. Your API key should be here: https://serpapi.com/manage-api-key\"\n}",
-  "Google Flights 2027-04-17_2027-05-05: HTTP 401: {\n  \"error\": \"Invalid API key. Your API key should be here: https://serpapi.com/manage-api-key\"\n}",
-  "Google Flights 2027-04-17_2027-05-08: HTTP 401: {\n  \"error\": \"Invalid API key. Your API key should be here: https://serpapi.com/manage-api-key\"\n}"
+  "Google Flights 2027-04-18_2027-05-03: HTTP 401: {\n  \"error\": \"Invalid API key. Your API key should be here: https://serpapi.com/manage-api-key\"\n}",
+  "Google Flights 2027-04-18_2027-05-06: HTTP 401: {\n  \"error\": \"Invalid API key. Your API key should be here: https://serpapi.com/manage-api-key\"\n}",
+  "Google Flights 2027-04-18_2027-05-09: HTTP 401: {\n  \"error\": \"Invalid API key. Your API key should be here: https://serpapi.com/manage-api-key\"\n}",
+  "Google Flights 2027-04-19_2027-05-04: HTTP 401: {\n  \"error\": \"Invalid API key. Your API key should be here: https://serpapi.com/manage-api-key\"\n}",
+  "Google Flights 2027-04-19_2027-05-07: HTTP 401: {\n  \"error\": \"Invalid API key. Your API key should be here: https://serpapi.com/manage-api-key\"\n}",
+  "Google Flights 2027-04-19_2027-05-10: HTTP 401: {\n  \"error\": \"Invalid API key. Your API key should be here: https://serpapi.com/manage-api-key\"\n}",
+  "Google Flights 2027-04-20_2027-05-05: HTTP 401: {\n  \"error\": \"Invalid API key. Your API key should be here: https://serpapi.com/manage-api-key\"\n}",
+  "Google Flights 2027-04-20_2027-05-08: HTTP 401: {\n  \"error\": \"Invalid API key. Your API key should be here: https://serpapi.com/manage-api-key\"\n}"
  ]
 }
