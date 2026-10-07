@@ -18,6 +18,7 @@ import os
 import sys
 import urllib.parse
 import urllib.request
+import urllib.error
 from datetime import date, datetime, timedelta, timezone
 
 # ---------------- PODEŠAVANJA ----------------
@@ -35,6 +36,9 @@ SEARCHES_PER_RUN = int(os.getenv("SEARCHES_PER_RUN", "8"))   # 8 x 31 = 248 < 25
 # Google Flights prikazuje UKUPNU cenu za sve putnike. Ako se pokaže drugačije, postavi na "false".
 PRICE_IS_TOTAL = os.getenv("PRICE_IS_TOTAL", "true").lower() == "true"
 ROUTES = ["BEG-TYO", "BEG-OSA", "BUD-TYO", "BUD-OSA"]
+# Aviasales čuva cene po "tržištima" (zemlja korisnika koji je tražio). Podrazumevano je samo "ru",
+# zato pitamo više tržišta i uzimamo najjeftinije.
+AVIASALES_MARKETS = ["ru", "us", "de", "gb", "it", "pl", "hu", "rs", "kz", "tr", "ae"]
 KEEP_DAYS = 21                    # koliko dugo važi stara cena za "najbolje"
 # ---------------------------------------------
 
@@ -58,10 +62,23 @@ def save(path, obj):
         json.dump(obj, f, ensure_ascii=False, indent=1)
 
 
+ERRORS = []
+
+
+def log_error(msg):
+    print(msg)
+    if len(ERRORS) < 30:
+        ERRORS.append(msg[:300])
+
+
 def get_json(url, headers=None, timeout=90):
     req = urllib.request.Request(url, headers={"User-Agent": "japan-letovi/1.0", **(headers or {})})
-    with urllib.request.urlopen(req, timeout=timeout) as r:
-        return json.load(r)
+    try:
+        with urllib.request.urlopen(req, timeout=timeout) as r:
+            return json.load(r)
+    except urllib.error.HTTPError as e:
+        body = e.read().decode("utf-8", "replace")[:300]
+        raise RuntimeError(f"HTTP {e.code}: {body}") from None
 
 
 def in_window(dep, ret):
@@ -151,10 +168,10 @@ def run_serpapi(key, state, latest, today):
         try:
             resp = serpapi(dep, ret, key)
             if resp.get("error"):
-                print("SerpApi", k, "greška:", resp["error"]); continue
+                log_error(f"Google Flights {k}: {resp['error']}"); continue
             routes = parse_serpapi(resp, dep, ret)
         except Exception as e:
-            print("SerpApi", k, "greška:", e); continue
+            log_error(f"Google Flights {k}: {e}"); continue
         latest["combos"][k] = {"dep": dep, "ret": ret, "checked": today, "routes": routes}
         print("Google Flights", k, {r: v["per_person"] for r, v in routes.items()})
         found += [{"route": r, **v} for r, v in routes.items()]
@@ -186,25 +203,33 @@ def month_pairs():
 
 
 def run_aviasales(token, latest, today):
-    found, seen = [], set()
+    found, seen, stats, calls_failed = [], set(), {}, [0]
     for o in ORIGINS:
         for city in ("TYO", "OSA"):
-            for dm, rm in month_pairs():
+            for (dm, rm), market in [(p, m) for p in month_pairs() for m in AVIASALES_MARKETS]:
                 params = {"origin": o, "destination": city, "departure_at": dm, "return_at": rm,
                           "one_way": "false", "currency": "eur", "sorting": "price", "limit": "1000",
-                          "token": token}
+                          "market": market, "token": token}
                 try:
                     resp = get_json("https://api.travelpayouts.com/aviasales/v3/prices_for_dates?"
                                     + urllib.parse.urlencode(params), headers={"X-Access-Token": token})
                 except Exception as e:
-                    print("Aviasales", o, city, dm, rm, "greška:", e); continue
+                    calls_failed[0] += 1
+                    if calls_failed[0] <= 3:
+                        log_error(f"Aviasales {o}-{city} {dm}/{rm} [{market}]: {e}")
+                    continue
+                if resp.get("success") is False:
+                    if market == "ru":
+                        log_error(f"Aviasales {o}-{city} [{market}]: {resp.get('error') or resp}")
+                    continue
+                stats[market] = stats.get(market, 0) + len(resp.get("data") or [])
                 for t in resp.get("data") or []:
                     dep, ret = (t.get("departure_at") or "")[:10], (t.get("return_at") or "")[:10]
                     price = t.get("price")
                     if not isinstance(price, (int, float)) or not in_window(dep, ret):
                         continue
                     a = t.get("destination_airport") or city
-                    key = (o, city, dep, ret, price, t.get("airline"))
+                    key = (o, city, dep, ret, round(price), t.get("airline"))
                     if key in seen:
                         continue
                     seen.add(key)
@@ -221,7 +246,16 @@ def run_aviasales(token, latest, today):
                                   "compare": links, "note": "keš cena za 1 putnika"})
     found.sort(key=lambda x: x["per_person"])
     latest["aviasales"] = {"checked": today, "deals": found[:80]}
-    print("Aviasales: nađeno", len(found), "karata u prozoru")
+    # najjeftinija po ruti i terminu (isti let sa više tržišta = jedan red)
+    uniq = {}
+    for f in found:
+        k = (f["route"], f["dep"], f["ret"])
+        if k not in uniq or f["per_person"] < uniq[k]["per_person"]:
+            uniq[k] = f
+    found = sorted(uniq.values(), key=lambda x: x["per_person"])
+    latest["aviasales"]["deals"] = found[:120]
+    latest["aviasales"]["markets"] = stats
+    print("Aviasales: nađeno", len(found), "termina u prozoru; po tržištima:", stats)
     return found
 
 
@@ -297,6 +331,7 @@ def main():
     history.append({"date": today, "best": {r: best[r]["per_person"] for r in best}})
     history.sort(key=lambda h: h["date"])
 
+    latest["errors"] = ERRORS
     save(LATEST, latest); save(HISTORY, history); save(STATE, state)
 
     # javi samo za karte koje još nisu javljene (ista ruta, datumi i cena)

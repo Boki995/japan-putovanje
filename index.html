@@ -89,6 +89,8 @@ td.num{font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:now
 .btn:hover{filter:brightness(1.1)}
 select{font:inherit;padding:4px 8px;border-radius:6px;border:1px solid var(--line);background:var(--bg);color:var(--fg);margin-left:6px}
 .banner a{color:inherit}
+.errors{padding:12px 16px;border-radius:10px;background:var(--warn-soft);color:var(--warn);font-size:13px}
+.errors ul{margin:6px 0 0;padding-left:18px;font-family:var(--mono);font-size:12px;word-break:break-word}
 .cmp a,.cmpcell a{white-space:nowrap}
 .cmpcell{font-size:12px;min-width:180px}
 table{min-width:880px}
@@ -125,6 +127,7 @@ table{min-width:880px}
 
   <div id="status" class="status"><span>Učitavam podatke…</span></div>
   <div id="banner" class="banner" hidden></div>
+  <div id="errors" class="errors" hidden></div>
 
   <section style="display:grid;gap:12px">
     <h2>Najjeftinija karta po ruti</h2>
@@ -195,6 +198,7 @@ async function boot(){
   if(c.window) $("#f-window").textContent=`${d5(c.window[0])} – ${d8(c.window[1])}`;
   if(c.stays) $("#f-stays").textContent=c.stays.join(" / ")+" dana";
 
+  if(latest.errors&&latest.errors.length){const e=$("#errors");e.hidden=false;e.innerHTML=`<b>Poslednja provera je imala greške</b> (zato neke cene mogu da fale):<ul>${latest.errors.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>`;}
   const best=latest.best;
   const list=Object.entries(best).map(([id,v])=>({id,...v})).sort((a,b)=>a.per_person-b.per_person);
   const top=list[0];
