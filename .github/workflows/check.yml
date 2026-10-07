@@ -5,6 +5,10 @@ on:
     - cron: "30 5 * * *"   # svaki dan u 05:30 UTC (07:30 po našem vremenu leti)
   workflow_dispatch: {}    # ručno pokretanje: Actions → Dnevna provera cena → Run workflow
 
+concurrency:
+  group: provera-cena
+  cancel-in-progress: false
+
 permissions:
   contents: write
   issues: write
@@ -13,8 +17,10 @@ jobs:
   check:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+        with:
+          ref: main          # uvek najnovija verzija, i kad se pokrene "Re-run"
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
       - name: Proveri cene
@@ -31,4 +37,6 @@ jobs:
           git config user.email "price-bot@users.noreply.github.com"
           git add data
           git diff --cached --quiet || git commit -m "Cene $(date -u +%F)"
-          git push
+          # ako se repo u međuvremenu promenio, prvo pokupi izmene (naši novi podaci imaju prednost)
+          git pull --rebase -X theirs origin main || { git checkout --theirs data && git add data && GIT_EDITOR=true git rebase --continue; }
+          git push origin HEAD:main
