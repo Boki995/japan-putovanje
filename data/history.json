@@ -205,5 +205,14 @@
    "BEG-OSA": 859,
    "BEG-TYO": 871
   }
+ },
+ {
+  "date": "2026-10-30",
+  "best": {
+   "BUD-TYO": 699,
+   "BUD-OSA": 695,
+   "BEG-OSA": 790,
+   "BEG-TYO": 882
+  }
  }
 ]
