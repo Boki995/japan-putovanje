@@ -164,18 +164,18 @@
   "2027-04-21_2027-05-09": {
    "dep": "2027-04-21",
    "ret": "2027-05-09",
-   "checked": "2026-10-07",
+   "checked": "2026-11-02",
    "routes": {
     "BUD-TYO": {
      "source": "Google Flights",
-     "per_person": 1083,
-     "total": 6496,
-     "airlines": "Asiana Airlines",
+     "per_person": 965,
+     "total": 5791,
+     "airlines": "Qatar Airways",
      "stops": 1,
-     "duration_min": 925,
-     "via": "ICN",
+     "duration_min": 1855,
+     "via": "DOH",
      "from_airport": "BUD",
-     "to_airport": "NRT",
+     "to_airport": "HND",
      "dep": "2027-04-21",
      "ret": "2027-05-09",
      "url": "https://www.google.com/travel/flights?hl=en&gl=rs&curr=EUR&tfs=CBwQAho5EgoyMDI3LTA0LTIxagcIARIDQkVHagcIARIDQlVEcgcIARIDSE5EcgcIARIDTlJUcgcIARIDS0lYGjkSCjIwMjctMDUtMDlqBwgBEgNITkRqBwgBEgNOUlRqBwgBEgNLSVhyBwgBEgNCRUdyBwgBEgNCVURAAUABQAFAAUABQAFIAXABmAEB&tfu=EgIIAQ",
@@ -187,13 +187,34 @@
       "google": "https://www.google.com/travel/flights?q=Flights+from+BUD+to+HND%2CNRT+on+2027-04-21+through+2027-05-09+for+6+adults&curr=EUR&hl=en"
      }
     },
+    "BEG-OSA": {
+     "source": "Google Flights",
+     "per_person": 1139,
+     "total": 6834,
+     "airlines": "LOT, Etihad",
+     "stops": 2,
+     "duration_min": 2135,
+     "via": "WAW, AUH",
+     "from_airport": "BEG",
+     "to_airport": "KIX",
+     "dep": "2027-04-21",
+     "ret": "2027-05-09",
+     "url": "https://www.google.com/travel/flights?hl=en&gl=rs&curr=EUR&tfs=CBwQAho5EgoyMDI3LTA0LTIxagcIARIDQkVHagcIARIDQlVEcgcIARIDSE5EcgcIARIDTlJUcgcIARIDS0lYGjkSCjIwMjctMDUtMDlqBwgBEgNITkRqBwgBEgNOUlRqBwgBEgNLSVhyBwgBEgNCRUdyBwgBEgNCVURAAUABQAFAAUABQAFIAXABmAEB&tfu=EgIIAQ",
+     "compare": {
+      "skyscanner": "https://www.skyscanner.net/transport/flights/beg/osaa/270421/270509/?adultsv2=6&cabinclass=economy&currency=EUR",
+      "kayak": "https://www.kayak.com/flights/BEG-OSA/2027-04-21/2027-05-09/6adults?sort=price_a",
+      "momondo": "https://www.momondo.com/flight-search/BEG-OSA/2027-04-21/2027-05-09/6adults?sort=price_a",
+      "aviasales": "https://www.aviasales.com/search/BEG2104OSA09056",
+      "google": "https://www.google.com/travel/flights?q=Flights+from+BEG+to+KIX+on+2027-04-21+through+2027-05-09+for+6+adults&curr=EUR&hl=en"
+     }
+    },
     "BUD-OSA": {
      "source": "Google Flights",
-     "per_person": 1194,
-     "total": 7166,
-     "airlines": "Asiana Airlines",
+     "per_person": 1503,
+     "total": 9016,
+     "airlines": "Asiana Airlines, Korean Air",
      "stops": 1,
-     "duration_min": 930,
+     "duration_min": 845,
      "via": "ICN",
      "from_airport": "BUD",
      "to_airport": "KIX",
@@ -206,27 +227,6 @@
       "momondo": "https://www.momondo.com/flight-search/BUD-OSA/2027-04-21/2027-05-09/6adults?sort=price_a",
       "aviasales": "https://www.aviasales.com/search/BUD2104OSA09056",
       "google": "https://www.google.com/travel/flights?q=Flights+from+BUD+to+KIX+on+2027-04-21+through+2027-05-09+for+6+adults&curr=EUR&hl=en"
-     }
-    },
-    "BEG-OSA": {
-     "source": "Google Flights",
-     "per_person": 1310,
-     "total": 7858,
-     "airlines": "Qatar Airways",
-     "stops": 1,
-     "duration_min": 1305,
-     "via": "DOH",
-     "from_airport": "BEG",
-     "to_airport": "KIX",
-     "dep": "2027-04-21",
-     "ret": "2027-05-09",
-     "url": "https://www.google.com/travel/flights?hl=en&gl=rs&curr=EUR&tfs=CBwQAho5EgoyMDI3LTA0LTIxagcIARIDQkVHagcIARIDQlVEcgcIARIDSE5EcgcIARIDTlJUcgcIARIDS0lYGjkSCjIwMjctMDUtMDlqBwgBEgNITkRqBwgBEgNOUlRqBwgBEgNLSVhyBwgBEgNCRUdyBwgBEgNCVURAAUABQAFAAUABQAFIAXABmAEB&tfu=EgIIAQ",
-     "compare": {
-      "skyscanner": "https://www.skyscanner.net/transport/flights/beg/osaa/270421/270509/?adultsv2=6&cabinclass=economy&currency=EUR",
-      "kayak": "https://www.kayak.com/flights/BEG-OSA/2027-04-21/2027-05-09/6adults?sort=price_a",
-      "momondo": "https://www.momondo.com/flight-search/BEG-OSA/2027-04-21/2027-05-09/6adults?sort=price_a",
-      "aviasales": "https://www.aviasales.com/search/BEG2104OSA09056",
-      "google": "https://www.google.com/travel/flights?q=Flights+from+BEG+to+KIX+on+2027-04-21+through+2027-05-09+for+6+adults&curr=EUR&hl=en"
      }
     }
    }
@@ -17044,39 +17044,548 @@
      }
     }
    }
+  },
+  "2027-04-15_2027-05-03": {
+   "dep": "2027-04-15",
+   "ret": "2027-05-03",
+   "checked": "2026-11-02",
+   "routes": {
+    "BUD-TYO": {
+     "source": "Google Flights",
+     "per_person": 947,
+     "total": 5684,
+     "airlines": "Qatar Airways",
+     "stops": 1,
+     "duration_min": 1490,
+     "via": "DOH",
+     "from_airport": "BUD",
+     "to_airport": "HND",
+     "dep": "2027-04-15",
+     "ret": "2027-05-03",
+     "url": "https://www.google.com/travel/flights?hl=en&gl=rs&curr=EUR&tfs=CBwQAho5EgoyMDI3LTA0LTE1agcIARIDQkVHagcIARIDQlVEcgcIARIDSE5EcgcIARIDTlJUcgcIARIDS0lYGjkSCjIwMjctMDUtMDNqBwgBEgNITkRqBwgBEgNOUlRqBwgBEgNLSVhyBwgBEgNCRUdyBwgBEgNCVURAAUABQAFAAUABQAFIAXABmAEB&tfu=EgIIAQ",
+     "compare": {
+      "skyscanner": "https://www.skyscanner.net/transport/flights/bud/tyoa/270415/270503/?adultsv2=6&cabinclass=economy&currency=EUR",
+      "kayak": "https://www.kayak.com/flights/BUD-TYO/2027-04-15/2027-05-03/6adults?sort=price_a",
+      "momondo": "https://www.momondo.com/flight-search/BUD-TYO/2027-04-15/2027-05-03/6adults?sort=price_a",
+      "aviasales": "https://www.aviasales.com/search/BUD1504TYO03056",
+      "google": "https://www.google.com/travel/flights?q=Flights+from+BUD+to+HND%2CNRT+on+2027-04-15+through+2027-05-03+for+6+adults&curr=EUR&hl=en"
+     }
+    },
+    "BEG-TYO": {
+     "source": "Google Flights",
+     "per_person": 1058,
+     "total": 6351,
+     "airlines": "flydubai, Emirates",
+     "stops": 1,
+     "duration_min": 1525,
+     "via": "DXB",
+     "from_airport": "BEG",
+     "to_airport": "HND",
+     "dep": "2027-04-15",
+     "ret": "2027-05-03",
+     "url": "https://www.google.com/travel/flights?hl=en&gl=rs&curr=EUR&tfs=CBwQAho5EgoyMDI3LTA0LTE1agcIARIDQkVHagcIARIDQlVEcgcIARIDSE5EcgcIARIDTlJUcgcIARIDS0lYGjkSCjIwMjctMDUtMDNqBwgBEgNITkRqBwgBEgNOUlRqBwgBEgNLSVhyBwgBEgNCRUdyBwgBEgNCVURAAUABQAFAAUABQAFIAXABmAEB&tfu=EgIIAQ",
+     "compare": {
+      "skyscanner": "https://www.skyscanner.net/transport/flights/beg/tyoa/270415/270503/?adultsv2=6&cabinclass=economy&currency=EUR",
+      "kayak": "https://www.kayak.com/flights/BEG-TYO/2027-04-15/2027-05-03/6adults?sort=price_a",
+      "momondo": "https://www.momondo.com/flight-search/BEG-TYO/2027-04-15/2027-05-03/6adults?sort=price_a",
+      "aviasales": "https://www.aviasales.com/search/BEG1504TYO03056",
+      "google": "https://www.google.com/travel/flights?q=Flights+from+BEG+to+HND%2CNRT+on+2027-04-15+through+2027-05-03+for+6+adults&curr=EUR&hl=en"
+     }
+    },
+    "BUD-OSA": {
+     "source": "Google Flights",
+     "per_person": 1201,
+     "total": 7208,
+     "airlines": "Finnair",
+     "stops": 1,
+     "duration_min": 1050,
+     "via": "HEL",
+     "from_airport": "BUD",
+     "to_airport": "KIX",
+     "dep": "2027-04-15",
+     "ret": "2027-05-03",
+     "url": "https://www.google.com/travel/flights?hl=en&gl=rs&curr=EUR&tfs=CBwQAho5EgoyMDI3LTA0LTE1agcIARIDQkVHagcIARIDQlVEcgcIARIDSE5EcgcIARIDTlJUcgcIARIDS0lYGjkSCjIwMjctMDUtMDNqBwgBEgNITkRqBwgBEgNOUlRqBwgBEgNLSVhyBwgBEgNCRUdyBwgBEgNCVURAAUABQAFAAUABQAFIAXABmAEB&tfu=EgIIAQ",
+     "compare": {
+      "skyscanner": "https://www.skyscanner.net/transport/flights/bud/osaa/270415/270503/?adultsv2=6&cabinclass=economy&currency=EUR",
+      "kayak": "https://www.kayak.com/flights/BUD-OSA/2027-04-15/2027-05-03/6adults?sort=price_a",
+      "momondo": "https://www.momondo.com/flight-search/BUD-OSA/2027-04-15/2027-05-03/6adults?sort=price_a",
+      "aviasales": "https://www.aviasales.com/search/BUD1504OSA03056",
+      "google": "https://www.google.com/travel/flights?q=Flights+from+BUD+to+KIX+on+2027-04-15+through+2027-05-03+for+6+adults&curr=EUR&hl=en"
+     }
+    },
+    "BEG-OSA": {
+     "source": "Google Flights",
+     "per_person": 1974,
+     "total": 11841,
+     "airlines": "Turkish Airlines",
+     "stops": 1,
+     "duration_min": 935,
+     "via": "IST",
+     "from_airport": "BEG",
+     "to_airport": "KIX",
+     "dep": "2027-04-15",
+     "ret": "2027-05-03",
+     "url": "https://www.google.com/travel/flights?hl=en&gl=rs&curr=EUR&tfs=CBwQAho5EgoyMDI3LTA0LTE1agcIARIDQkVHagcIARIDQlVEcgcIARIDSE5EcgcIARIDTlJUcgcIARIDS0lYGjkSCjIwMjctMDUtMDNqBwgBEgNITkRqBwgBEgNOUlRqBwgBEgNLSVhyBwgBEgNCRUdyBwgBEgNCVURAAUABQAFAAUABQAFIAXABmAEB&tfu=EgIIAQ",
+     "compare": {
+      "skyscanner": "https://www.skyscanner.net/transport/flights/beg/osaa/270415/270503/?adultsv2=6&cabinclass=economy&currency=EUR",
+      "kayak": "https://www.kayak.com/flights/BEG-OSA/2027-04-15/2027-05-03/6adults?sort=price_a",
+      "momondo": "https://www.momondo.com/flight-search/BEG-OSA/2027-04-15/2027-05-03/6adults?sort=price_a",
+      "aviasales": "https://www.aviasales.com/search/BEG1504OSA03056",
+      "google": "https://www.google.com/travel/flights?q=Flights+from+BEG+to+KIX+on+2027-04-15+through+2027-05-03+for+6+adults&curr=EUR&hl=en"
+     }
+    }
+   }
+  },
+  "2027-04-29_2027-05-14": {
+   "dep": "2027-04-29",
+   "ret": "2027-05-14",
+   "checked": "2026-11-02",
+   "routes": {
+    "BUD-TYO": {
+     "source": "Google Flights",
+     "per_person": 946,
+     "total": 5678,
+     "airlines": "Qatar Airways",
+     "stops": 1,
+     "duration_min": 1205,
+     "via": "DOH",
+     "from_airport": "BUD",
+     "to_airport": "NRT",
+     "dep": "2027-04-29",
+     "ret": "2027-05-14",
+     "url": "https://www.google.com/travel/flights?hl=en&gl=rs&curr=EUR&tfs=CBwQAho5EgoyMDI3LTA0LTI5agcIARIDQkVHagcIARIDQlVEcgcIARIDSE5EcgcIARIDTlJUcgcIARIDS0lYGjkSCjIwMjctMDUtMTRqBwgBEgNITkRqBwgBEgNOUlRqBwgBEgNLSVhyBwgBEgNCRUdyBwgBEgNCVURAAUABQAFAAUABQAFIAXABmAEB&tfu=EgIIAQ",
+     "compare": {
+      "skyscanner": "https://www.skyscanner.net/transport/flights/bud/tyoa/270429/270514/?adultsv2=6&cabinclass=economy&currency=EUR",
+      "kayak": "https://www.kayak.com/flights/BUD-TYO/2027-04-29/2027-05-14/6adults?sort=price_a",
+      "momondo": "https://www.momondo.com/flight-search/BUD-TYO/2027-04-29/2027-05-14/6adults?sort=price_a",
+      "aviasales": "https://www.aviasales.com/search/BUD2904TYO14056",
+      "google": "https://www.google.com/travel/flights?q=Flights+from+BUD+to+HND%2CNRT+on+2027-04-29+through+2027-05-14+for+6+adults&curr=EUR&hl=en"
+     }
+    },
+    "BEG-OSA": {
+     "source": "Google Flights",
+     "per_person": 1188,
+     "total": 7131,
+     "airlines": "Austrian, Etihad",
+     "stops": 2,
+     "duration_min": 1310,
+     "via": "VIE, AUH",
+     "from_airport": "BEG",
+     "to_airport": "KIX",
+     "dep": "2027-04-29",
+     "ret": "2027-05-14",
+     "url": "https://www.google.com/travel/flights?hl=en&gl=rs&curr=EUR&tfs=CBwQAho5EgoyMDI3LTA0LTI5agcIARIDQkVHagcIARIDQlVEcgcIARIDSE5EcgcIARIDTlJUcgcIARIDS0lYGjkSCjIwMjctMDUtMTRqBwgBEgNITkRqBwgBEgNOUlRqBwgBEgNLSVhyBwgBEgNCRUdyBwgBEgNCVURAAUABQAFAAUABQAFIAXABmAEB&tfu=EgIIAQ",
+     "compare": {
+      "skyscanner": "https://www.skyscanner.net/transport/flights/beg/osaa/270429/270514/?adultsv2=6&cabinclass=economy&currency=EUR",
+      "kayak": "https://www.kayak.com/flights/BEG-OSA/2027-04-29/2027-05-14/6adults?sort=price_a",
+      "momondo": "https://www.momondo.com/flight-search/BEG-OSA/2027-04-29/2027-05-14/6adults?sort=price_a",
+      "aviasales": "https://www.aviasales.com/search/BEG2904OSA14056",
+      "google": "https://www.google.com/travel/flights?q=Flights+from+BEG+to+KIX+on+2027-04-29+through+2027-05-14+for+6+adults&curr=EUR&hl=en"
+     }
+    },
+    "BUD-OSA": {
+     "source": "Google Flights",
+     "per_person": 2506,
+     "total": 15034,
+     "airlines": "Korean Air",
+     "stops": 1,
+     "duration_min": 845,
+     "via": "ICN",
+     "from_airport": "BUD",
+     "to_airport": "KIX",
+     "dep": "2027-04-29",
+     "ret": "2027-05-14",
+     "url": "https://www.google.com/travel/flights?hl=en&gl=rs&curr=EUR&tfs=CBwQAho5EgoyMDI3LTA0LTI5agcIARIDQkVHagcIARIDQlVEcgcIARIDSE5EcgcIARIDTlJUcgcIARIDS0lYGjkSCjIwMjctMDUtMTRqBwgBEgNITkRqBwgBEgNOUlRqBwgBEgNLSVhyBwgBEgNCRUdyBwgBEgNCVURAAUABQAFAAUABQAFIAXABmAEB&tfu=EgIIAQ",
+     "compare": {
+      "skyscanner": "https://www.skyscanner.net/transport/flights/bud/osaa/270429/270514/?adultsv2=6&cabinclass=economy&currency=EUR",
+      "kayak": "https://www.kayak.com/flights/BUD-OSA/2027-04-29/2027-05-14/6adults?sort=price_a",
+      "momondo": "https://www.momondo.com/flight-search/BUD-OSA/2027-04-29/2027-05-14/6adults?sort=price_a",
+      "aviasales": "https://www.aviasales.com/search/BUD2904OSA14056",
+      "google": "https://www.google.com/travel/flights?q=Flights+from+BUD+to+KIX+on+2027-04-29+through+2027-05-14+for+6+adults&curr=EUR&hl=en"
+     }
+    }
+   }
+  },
+  "2027-05-12_2027-06-02": {
+   "dep": "2027-05-12",
+   "ret": "2027-06-02",
+   "checked": "2026-11-02",
+   "routes": {
+    "BUD-TYO": {
+     "source": "Google Flights",
+     "per_person": 840,
+     "total": 5042,
+     "airlines": "Qatar Airways",
+     "stops": 1,
+     "duration_min": 1855,
+     "via": "DOH",
+     "from_airport": "BUD",
+     "to_airport": "HND",
+     "dep": "2027-05-12",
+     "ret": "2027-06-02",
+     "url": "https://www.google.com/travel/flights?hl=en&gl=rs&curr=EUR&tfs=CBwQAho5EgoyMDI3LTA1LTEyagcIARIDQkVHagcIARIDQlVEcgcIARIDSE5EcgcIARIDTlJUcgcIARIDS0lYGjkSCjIwMjctMDYtMDJqBwgBEgNITkRqBwgBEgNOUlRqBwgBEgNLSVhyBwgBEgNCRUdyBwgBEgNCVURAAUABQAFAAUABQAFIAXABmAEB&tfu=EgIIAQ",
+     "compare": {
+      "skyscanner": "https://www.skyscanner.net/transport/flights/bud/tyoa/270512/270602/?adultsv2=6&cabinclass=economy&currency=EUR",
+      "kayak": "https://www.kayak.com/flights/BUD-TYO/2027-05-12/2027-06-02/6adults?sort=price_a",
+      "momondo": "https://www.momondo.com/flight-search/BUD-TYO/2027-05-12/2027-06-02/6adults?sort=price_a",
+      "aviasales": "https://www.aviasales.com/search/BUD1205TYO02066",
+      "google": "https://www.google.com/travel/flights?q=Flights+from+BUD+to+HND%2CNRT+on+2027-05-12+through+2027-06-02+for+6+adults&curr=EUR&hl=en"
+     }
+    },
+    "BEG-TYO": {
+     "source": "Google Flights",
+     "per_person": 992,
+     "total": 5954,
+     "airlines": "flydubai, Emirates",
+     "stops": 1,
+     "duration_min": 1845,
+     "via": "DXB",
+     "from_airport": "BEG",
+     "to_airport": "NRT",
+     "dep": "2027-05-12",
+     "ret": "2027-06-02",
+     "url": "https://www.google.com/travel/flights?hl=en&gl=rs&curr=EUR&tfs=CBwQAho5EgoyMDI3LTA1LTEyagcIARIDQkVHagcIARIDQlVEcgcIARIDSE5EcgcIARIDTlJUcgcIARIDS0lYGjkSCjIwMjctMDYtMDJqBwgBEgNITkRqBwgBEgNOUlRqBwgBEgNLSVhyBwgBEgNCRUdyBwgBEgNCVURAAUABQAFAAUABQAFIAXABmAEB&tfu=EgIIAQ",
+     "compare": {
+      "skyscanner": "https://www.skyscanner.net/transport/flights/beg/tyoa/270512/270602/?adultsv2=6&cabinclass=economy&currency=EUR",
+      "kayak": "https://www.kayak.com/flights/BEG-TYO/2027-05-12/2027-06-02/6adults?sort=price_a",
+      "momondo": "https://www.momondo.com/flight-search/BEG-TYO/2027-05-12/2027-06-02/6adults?sort=price_a",
+      "aviasales": "https://www.aviasales.com/search/BEG1205TYO02066",
+      "google": "https://www.google.com/travel/flights?q=Flights+from+BEG+to+HND%2CNRT+on+2027-05-12+through+2027-06-02+for+6+adults&curr=EUR&hl=en"
+     }
+    },
+    "BEG-OSA": {
+     "source": "Google Flights",
+     "per_person": 1216,
+     "total": 7296,
+     "airlines": "flydubai, Emirates",
+     "stops": 1,
+     "duration_min": 2070,
+     "via": "DXB",
+     "from_airport": "BEG",
+     "to_airport": "KIX",
+     "dep": "2027-05-12",
+     "ret": "2027-06-02",
+     "url": "https://www.google.com/travel/flights?hl=en&gl=rs&curr=EUR&tfs=CBwQAho5EgoyMDI3LTA1LTEyagcIARIDQkVHagcIARIDQlVEcgcIARIDSE5EcgcIARIDTlJUcgcIARIDS0lYGjkSCjIwMjctMDYtMDJqBwgBEgNITkRqBwgBEgNOUlRqBwgBEgNLSVhyBwgBEgNCRUdyBwgBEgNCVURAAUABQAFAAUABQAFIAXABmAEB&tfu=EgIIAQ",
+     "compare": {
+      "skyscanner": "https://www.skyscanner.net/transport/flights/beg/osaa/270512/270602/?adultsv2=6&cabinclass=economy&currency=EUR",
+      "kayak": "https://www.kayak.com/flights/BEG-OSA/2027-05-12/2027-06-02/6adults?sort=price_a",
+      "momondo": "https://www.momondo.com/flight-search/BEG-OSA/2027-05-12/2027-06-02/6adults?sort=price_a",
+      "aviasales": "https://www.aviasales.com/search/BEG1205OSA02066",
+      "google": "https://www.google.com/travel/flights?q=Flights+from+BEG+to+KIX+on+2027-05-12+through+2027-06-02+for+6+adults&curr=EUR&hl=en"
+     }
+    }
+   }
+  },
+  "2027-03-11_2027-03-29": {
+   "dep": "2027-03-11",
+   "ret": "2027-03-29",
+   "checked": "2026-11-02",
+   "routes": {
+    "BUD-TYO": {
+     "source": "Google Flights",
+     "per_person": 990,
+     "total": 5940,
+     "airlines": "Korean Air",
+     "stops": 1,
+     "duration_min": 960,
+     "via": "ICN",
+     "from_airport": "BUD",
+     "to_airport": "NRT",
+     "dep": "2027-03-11",
+     "ret": "2027-03-29",
+     "url": "https://www.google.com/travel/flights?hl=en&gl=rs&curr=EUR&tfs=CBwQAho5EgoyMDI3LTAzLTExagcIARIDQkVHagcIARIDQlVEcgcIARIDSE5EcgcIARIDTlJUcgcIARIDS0lYGjkSCjIwMjctMDMtMjlqBwgBEgNITkRqBwgBEgNOUlRqBwgBEgNLSVhyBwgBEgNCRUdyBwgBEgNCVURAAUABQAFAAUABQAFIAXABmAEB&tfu=EgIIAQ",
+     "compare": {
+      "skyscanner": "https://www.skyscanner.net/transport/flights/bud/tyoa/270311/270329/?adultsv2=6&cabinclass=economy&currency=EUR",
+      "kayak": "https://www.kayak.com/flights/BUD-TYO/2027-03-11/2027-03-29/6adults?sort=price_a",
+      "momondo": "https://www.momondo.com/flight-search/BUD-TYO/2027-03-11/2027-03-29/6adults?sort=price_a",
+      "aviasales": "https://www.aviasales.com/search/BUD1103TYO29036",
+      "google": "https://www.google.com/travel/flights?q=Flights+from+BUD+to+HND%2CNRT+on+2027-03-11+through+2027-03-29+for+6+adults&curr=EUR&hl=en"
+     }
+    },
+    "BUD-OSA": {
+     "source": "Google Flights",
+     "per_person": 993,
+     "total": 5956,
+     "airlines": "Korean Air",
+     "stops": 1,
+     "duration_min": 810,
+     "via": "ICN",
+     "from_airport": "BUD",
+     "to_airport": "KIX",
+     "dep": "2027-03-11",
+     "ret": "2027-03-29",
+     "url": "https://www.google.com/travel/flights?hl=en&gl=rs&curr=EUR&tfs=CBwQAho5EgoyMDI3LTAzLTExagcIARIDQkVHagcIARIDQlVEcgcIARIDSE5EcgcIARIDTlJUcgcIARIDS0lYGjkSCjIwMjctMDMtMjlqBwgBEgNITkRqBwgBEgNOUlRqBwgBEgNLSVhyBwgBEgNCRUdyBwgBEgNCVURAAUABQAFAAUABQAFIAXABmAEB&tfu=EgIIAQ",
+     "compare": {
+      "skyscanner": "https://www.skyscanner.net/transport/flights/bud/osaa/270311/270329/?adultsv2=6&cabinclass=economy&currency=EUR",
+      "kayak": "https://www.kayak.com/flights/BUD-OSA/2027-03-11/2027-03-29/6adults?sort=price_a",
+      "momondo": "https://www.momondo.com/flight-search/BUD-OSA/2027-03-11/2027-03-29/6adults?sort=price_a",
+      "aviasales": "https://www.aviasales.com/search/BUD1103OSA29036",
+      "google": "https://www.google.com/travel/flights?q=Flights+from+BUD+to+KIX+on+2027-03-11+through+2027-03-29+for+6+adults&curr=EUR&hl=en"
+     }
+    },
+    "BEG-TYO": {
+     "source": "Google Flights",
+     "per_person": 1293,
+     "total": 7757,
+     "airlines": "LOT",
+     "stops": 1,
+     "duration_min": 1305,
+     "via": "WAW",
+     "from_airport": "BEG",
+     "to_airport": "NRT",
+     "dep": "2027-03-11",
+     "ret": "2027-03-29",
+     "url": "https://www.google.com/travel/flights?hl=en&gl=rs&curr=EUR&tfs=CBwQAho5EgoyMDI3LTAzLTExagcIARIDQkVHagcIARIDQlVEcgcIARIDSE5EcgcIARIDTlJUcgcIARIDS0lYGjkSCjIwMjctMDMtMjlqBwgBEgNITkRqBwgBEgNOUlRqBwgBEgNLSVhyBwgBEgNCRUdyBwgBEgNCVURAAUABQAFAAUABQAFIAXABmAEB&tfu=EgIIAQ",
+     "compare": {
+      "skyscanner": "https://www.skyscanner.net/transport/flights/beg/tyoa/270311/270329/?adultsv2=6&cabinclass=economy&currency=EUR",
+      "kayak": "https://www.kayak.com/flights/BEG-TYO/2027-03-11/2027-03-29/6adults?sort=price_a",
+      "momondo": "https://www.momondo.com/flight-search/BEG-TYO/2027-03-11/2027-03-29/6adults?sort=price_a",
+      "aviasales": "https://www.aviasales.com/search/BEG1103TYO29036",
+      "google": "https://www.google.com/travel/flights?q=Flights+from+BEG+to+HND%2CNRT+on+2027-03-11+through+2027-03-29+for+6+adults&curr=EUR&hl=en"
+     }
+    },
+    "BEG-OSA": {
+     "source": "Google Flights",
+     "per_person": 1448,
+     "total": 8686,
+     "airlines": "Air Serbia, China Airlines",
+     "stops": 2,
+     "duration_min": 1195,
+     "via": "VIE, TPE",
+     "from_airport": "BEG",
+     "to_airport": "KIX",
+     "dep": "2027-03-11",
+     "ret": "2027-03-29",
+     "url": "https://www.google.com/travel/flights?hl=en&gl=rs&curr=EUR&tfs=CBwQAho5EgoyMDI3LTAzLTExagcIARIDQkVHagcIARIDQlVEcgcIARIDSE5EcgcIARIDTlJUcgcIARIDS0lYGjkSCjIwMjctMDMtMjlqBwgBEgNITkRqBwgBEgNOUlRqBwgBEgNLSVhyBwgBEgNCRUdyBwgBEgNCVURAAUABQAFAAUABQAFIAXABmAEB&tfu=EgIIAQ",
+     "compare": {
+      "skyscanner": "https://www.skyscanner.net/transport/flights/beg/osaa/270311/270329/?adultsv2=6&cabinclass=economy&currency=EUR",
+      "kayak": "https://www.kayak.com/flights/BEG-OSA/2027-03-11/2027-03-29/6adults?sort=price_a",
+      "momondo": "https://www.momondo.com/flight-search/BEG-OSA/2027-03-11/2027-03-29/6adults?sort=price_a",
+      "aviasales": "https://www.aviasales.com/search/BEG1103OSA29036",
+      "google": "https://www.google.com/travel/flights?q=Flights+from+BEG+to+KIX+on+2027-03-11+through+2027-03-29+for+6+adults&curr=EUR&hl=en"
+     }
+    }
+   }
+  },
+  "2027-03-25_2027-04-09": {
+   "dep": "2027-03-25",
+   "ret": "2027-04-09",
+   "checked": "2026-11-02",
+   "routes": {
+    "BUD-TYO": {
+     "source": "Google Flights",
+     "per_person": 1533,
+     "total": 9198,
+     "airlines": "Korean Air",
+     "stops": 1,
+     "duration_min": 960,
+     "via": "ICN",
+     "from_airport": "BUD",
+     "to_airport": "NRT",
+     "dep": "2027-03-25",
+     "ret": "2027-04-09",
+     "url": "https://www.google.com/travel/flights?hl=en&gl=rs&curr=EUR&tfs=CBwQAho5EgoyMDI3LTAzLTI1agcIARIDQkVHagcIARIDQlVEcgcIARIDSE5EcgcIARIDTlJUcgcIARIDS0lYGjkSCjIwMjctMDQtMDlqBwgBEgNITkRqBwgBEgNOUlRqBwgBEgNLSVhyBwgBEgNCRUdyBwgBEgNCVURAAUABQAFAAUABQAFIAXABmAEB&tfu=EgIIAQ",
+     "compare": {
+      "skyscanner": "https://www.skyscanner.net/transport/flights/bud/tyoa/270325/270409/?adultsv2=6&cabinclass=economy&currency=EUR",
+      "kayak": "https://www.kayak.com/flights/BUD-TYO/2027-03-25/2027-04-09/6adults?sort=price_a",
+      "momondo": "https://www.momondo.com/flight-search/BUD-TYO/2027-03-25/2027-04-09/6adults?sort=price_a",
+      "aviasales": "https://www.aviasales.com/search/BUD2503TYO09046",
+      "google": "https://www.google.com/travel/flights?q=Flights+from+BUD+to+HND%2CNRT+on+2027-03-25+through+2027-04-09+for+6+adults&curr=EUR&hl=en"
+     }
+    },
+    "BUD-OSA": {
+     "source": "Google Flights",
+     "per_person": 1536,
+     "total": 9214,
+     "airlines": "Korean Air",
+     "stops": 1,
+     "duration_min": 810,
+     "via": "ICN",
+     "from_airport": "BUD",
+     "to_airport": "KIX",
+     "dep": "2027-03-25",
+     "ret": "2027-04-09",
+     "url": "https://www.google.com/travel/flights?hl=en&gl=rs&curr=EUR&tfs=CBwQAho5EgoyMDI3LTAzLTI1agcIARIDQkVHagcIARIDQlVEcgcIARIDSE5EcgcIARIDTlJUcgcIARIDS0lYGjkSCjIwMjctMDQtMDlqBwgBEgNITkRqBwgBEgNOUlRqBwgBEgNLSVhyBwgBEgNCRUdyBwgBEgNCVURAAUABQAFAAUABQAFIAXABmAEB&tfu=EgIIAQ",
+     "compare": {
+      "skyscanner": "https://www.skyscanner.net/transport/flights/bud/osaa/270325/270409/?adultsv2=6&cabinclass=economy&currency=EUR",
+      "kayak": "https://www.kayak.com/flights/BUD-OSA/2027-03-25/2027-04-09/6adults?sort=price_a",
+      "momondo": "https://www.momondo.com/flight-search/BUD-OSA/2027-03-25/2027-04-09/6adults?sort=price_a",
+      "aviasales": "https://www.aviasales.com/search/BUD2503OSA09046",
+      "google": "https://www.google.com/travel/flights?q=Flights+from+BUD+to+KIX+on+2027-03-25+through+2027-04-09+for+6+adults&curr=EUR&hl=en"
+     }
+    },
+    "BEG-OSA": {
+     "source": "Google Flights",
+     "per_person": 2982,
+     "total": 17891,
+     "airlines": "Turkish Airlines",
+     "stops": 1,
+     "duration_min": 890,
+     "via": "IST",
+     "from_airport": "BEG",
+     "to_airport": "KIX",
+     "dep": "2027-03-25",
+     "ret": "2027-04-09",
+     "url": "https://www.google.com/travel/flights?hl=en&gl=rs&curr=EUR&tfs=CBwQAho5EgoyMDI3LTAzLTI1agcIARIDQkVHagcIARIDQlVEcgcIARIDSE5EcgcIARIDTlJUcgcIARIDS0lYGjkSCjIwMjctMDQtMDlqBwgBEgNITkRqBwgBEgNOUlRqBwgBEgNLSVhyBwgBEgNCRUdyBwgBEgNCVURAAUABQAFAAUABQAFIAXABmAEB&tfu=EgIIAQ",
+     "compare": {
+      "skyscanner": "https://www.skyscanner.net/transport/flights/beg/osaa/270325/270409/?adultsv2=6&cabinclass=economy&currency=EUR",
+      "kayak": "https://www.kayak.com/flights/BEG-OSA/2027-03-25/2027-04-09/6adults?sort=price_a",
+      "momondo": "https://www.momondo.com/flight-search/BEG-OSA/2027-03-25/2027-04-09/6adults?sort=price_a",
+      "aviasales": "https://www.aviasales.com/search/BEG2503OSA09046",
+      "google": "https://www.google.com/travel/flights?q=Flights+from+BEG+to+KIX+on+2027-03-25+through+2027-04-09+for+6+adults&curr=EUR&hl=en"
+     }
+    }
+   }
+  },
+  "2027-04-07_2027-04-28": {
+   "dep": "2027-04-07",
+   "ret": "2027-04-28",
+   "checked": "2026-11-02",
+   "routes": {
+    "BUD-TYO": {
+     "source": "Google Flights",
+     "per_person": 1129,
+     "total": 6776,
+     "airlines": "Qatar Airways",
+     "stops": 1,
+     "duration_min": 1855,
+     "via": "DOH",
+     "from_airport": "BUD",
+     "to_airport": "HND",
+     "dep": "2027-04-07",
+     "ret": "2027-04-28",
+     "url": "https://www.google.com/travel/flights?hl=en&gl=rs&curr=EUR&tfs=CBwQAho5EgoyMDI3LTA0LTA3agcIARIDQkVHagcIARIDQlVEcgcIARIDSE5EcgcIARIDTlJUcgcIARIDS0lYGjkSCjIwMjctMDQtMjhqBwgBEgNITkRqBwgBEgNOUlRqBwgBEgNLSVhyBwgBEgNCRUdyBwgBEgNCVURAAUABQAFAAUABQAFIAXABmAEB&tfu=EgIIAQ",
+     "compare": {
+      "skyscanner": "https://www.skyscanner.net/transport/flights/bud/tyoa/270407/270428/?adultsv2=6&cabinclass=economy&currency=EUR",
+      "kayak": "https://www.kayak.com/flights/BUD-TYO/2027-04-07/2027-04-28/6adults?sort=price_a",
+      "momondo": "https://www.momondo.com/flight-search/BUD-TYO/2027-04-07/2027-04-28/6adults?sort=price_a",
+      "aviasales": "https://www.aviasales.com/search/BUD0704TYO28046",
+      "google": "https://www.google.com/travel/flights?q=Flights+from+BUD+to+HND%2CNRT+on+2027-04-07+through+2027-04-28+for+6+adults&curr=EUR&hl=en"
+     }
+    },
+    "BUD-OSA": {
+     "source": "Google Flights",
+     "per_person": 1181,
+     "total": 7084,
+     "airlines": "Finnair",
+     "stops": 1,
+     "duration_min": 1050,
+     "via": "HEL",
+     "from_airport": "BUD",
+     "to_airport": "KIX",
+     "dep": "2027-04-07",
+     "ret": "2027-04-28",
+     "url": "https://www.google.com/travel/flights?hl=en&gl=rs&curr=EUR&tfs=CBwQAho5EgoyMDI3LTA0LTA3agcIARIDQkVHagcIARIDQlVEcgcIARIDSE5EcgcIARIDTlJUcgcIARIDS0lYGjkSCjIwMjctMDQtMjhqBwgBEgNITkRqBwgBEgNOUlRqBwgBEgNLSVhyBwgBEgNCRUdyBwgBEgNCVURAAUABQAFAAUABQAFIAXABmAEB&tfu=EgIIAQ",
+     "compare": {
+      "skyscanner": "https://www.skyscanner.net/transport/flights/bud/osaa/270407/270428/?adultsv2=6&cabinclass=economy&currency=EUR",
+      "kayak": "https://www.kayak.com/flights/BUD-OSA/2027-04-07/2027-04-28/6adults?sort=price_a",
+      "momondo": "https://www.momondo.com/flight-search/BUD-OSA/2027-04-07/2027-04-28/6adults?sort=price_a",
+      "aviasales": "https://www.aviasales.com/search/BUD0704OSA28046",
+      "google": "https://www.google.com/travel/flights?q=Flights+from+BUD+to+KIX+on+2027-04-07+through+2027-04-28+for+6+adults&curr=EUR&hl=en"
+     }
+    },
+    "BEG-TYO": {
+     "source": "Google Flights",
+     "per_person": 1284,
+     "total": 7704,
+     "airlines": "Lufthansa",
+     "stops": 1,
+     "duration_min": 1200,
+     "via": "FRA",
+     "from_airport": "BEG",
+     "to_airport": "NRT",
+     "dep": "2027-04-07",
+     "ret": "2027-04-28",
+     "url": "https://www.google.com/travel/flights?hl=en&gl=rs&curr=EUR&tfs=CBwQAho5EgoyMDI3LTA0LTA3agcIARIDQkVHagcIARIDQlVEcgcIARIDSE5EcgcIARIDTlJUcgcIARIDS0lYGjkSCjIwMjctMDQtMjhqBwgBEgNITkRqBwgBEgNOUlRqBwgBEgNLSVhyBwgBEgNCRUdyBwgBEgNCVURAAUABQAFAAUABQAFIAXABmAEB&tfu=EgIIAQ",
+     "compare": {
+      "skyscanner": "https://www.skyscanner.net/transport/flights/beg/tyoa/270407/270428/?adultsv2=6&cabinclass=economy&currency=EUR",
+      "kayak": "https://www.kayak.com/flights/BEG-TYO/2027-04-07/2027-04-28/6adults?sort=price_a",
+      "momondo": "https://www.momondo.com/flight-search/BEG-TYO/2027-04-07/2027-04-28/6adults?sort=price_a",
+      "aviasales": "https://www.aviasales.com/search/BEG0704TYO28046",
+      "google": "https://www.google.com/travel/flights?q=Flights+from+BEG+to+HND%2CNRT+on+2027-04-07+through+2027-04-28+for+6+adults&curr=EUR&hl=en"
+     }
+    }
+   }
+  },
+  "2027-05-05_2027-05-20": {
+   "dep": "2027-05-05",
+   "ret": "2027-05-20",
+   "checked": "2026-11-02",
+   "routes": {
+    "BUD-TYO": {
+     "source": "Google Flights",
+     "per_person": 1093,
+     "total": 6560,
+     "airlines": "Lufthansa",
+     "stops": 1,
+     "duration_min": 1235,
+     "via": "FRA",
+     "from_airport": "BUD",
+     "to_airport": "NRT",
+     "dep": "2027-05-05",
+     "ret": "2027-05-20",
+     "url": "https://www.google.com/travel/flights?hl=en&gl=rs&curr=EUR&tfs=CBwQAho5EgoyMDI3LTA1LTA1agcIARIDQkVHagcIARIDQlVEcgcIARIDSE5EcgcIARIDTlJUcgcIARIDS0lYGjkSCjIwMjctMDUtMjBqBwgBEgNITkRqBwgBEgNOUlRqBwgBEgNLSVhyBwgBEgNCRUdyBwgBEgNCVURAAUABQAFAAUABQAFIAXABmAEB&tfu=EgIIAQ",
+     "compare": {
+      "skyscanner": "https://www.skyscanner.net/transport/flights/bud/tyoa/270505/270520/?adultsv2=6&cabinclass=economy&currency=EUR",
+      "kayak": "https://www.kayak.com/flights/BUD-TYO/2027-05-05/2027-05-20/6adults?sort=price_a",
+      "momondo": "https://www.momondo.com/flight-search/BUD-TYO/2027-05-05/2027-05-20/6adults?sort=price_a",
+      "aviasales": "https://www.aviasales.com/search/BUD0505TYO20056",
+      "google": "https://www.google.com/travel/flights?q=Flights+from+BUD+to+HND%2CNRT+on+2027-05-05+through+2027-05-20+for+6+adults&curr=EUR&hl=en"
+     }
+    },
+    "BEG-OSA": {
+     "source": "Google Flights",
+     "per_person": 1117,
+     "total": 6704,
+     "airlines": "Qatar Airways",
+     "stops": 1,
+     "duration_min": 1305,
+     "via": "DOH",
+     "from_airport": "BEG",
+     "to_airport": "KIX",
+     "dep": "2027-05-05",
+     "ret": "2027-05-20",
+     "url": "https://www.google.com/travel/flights?hl=en&gl=rs&curr=EUR&tfs=CBwQAho5EgoyMDI3LTA1LTA1agcIARIDQkVHagcIARIDQlVEcgcIARIDSE5EcgcIARIDTlJUcgcIARIDS0lYGjkSCjIwMjctMDUtMjBqBwgBEgNITkRqBwgBEgNOUlRqBwgBEgNLSVhyBwgBEgNCRUdyBwgBEgNCVURAAUABQAFAAUABQAFIAXABmAEB&tfu=EgIIAQ",
+     "compare": {
+      "skyscanner": "https://www.skyscanner.net/transport/flights/beg/osaa/270505/270520/?adultsv2=6&cabinclass=economy&currency=EUR",
+      "kayak": "https://www.kayak.com/flights/BEG-OSA/2027-05-05/2027-05-20/6adults?sort=price_a",
+      "momondo": "https://www.momondo.com/flight-search/BEG-OSA/2027-05-05/2027-05-20/6adults?sort=price_a",
+      "aviasales": "https://www.aviasales.com/search/BEG0505OSA20056",
+      "google": "https://www.google.com/travel/flights?q=Flights+from+BEG+to+KIX+on+2027-05-05+through+2027-05-20+for+6+adults&curr=EUR&hl=en"
+     }
+    },
+    "BEG-TYO": {
+     "source": "Google Flights",
+     "per_person": 1184,
+     "total": 7101,
+     "airlines": "LOT",
+     "stops": 1,
+     "duration_min": 1295,
+     "via": "WAW",
+     "from_airport": "BEG",
+     "to_airport": "NRT",
+     "dep": "2027-05-05",
+     "ret": "2027-05-20",
+     "url": "https://www.google.com/travel/flights?hl=en&gl=rs&curr=EUR&tfs=CBwQAho5EgoyMDI3LTA1LTA1agcIARIDQkVHagcIARIDQlVEcgcIARIDSE5EcgcIARIDTlJUcgcIARIDS0lYGjkSCjIwMjctMDUtMjBqBwgBEgNITkRqBwgBEgNOUlRqBwgBEgNLSVhyBwgBEgNCRUdyBwgBEgNCVURAAUABQAFAAUABQAFIAXABmAEB&tfu=EgIIAQ",
+     "compare": {
+      "skyscanner": "https://www.skyscanner.net/transport/flights/beg/tyoa/270505/270520/?adultsv2=6&cabinclass=economy&currency=EUR",
+      "kayak": "https://www.kayak.com/flights/BEG-TYO/2027-05-05/2027-05-20/6adults?sort=price_a",
+      "momondo": "https://www.momondo.com/flight-search/BEG-TYO/2027-05-05/2027-05-20/6adults?sort=price_a",
+      "aviasales": "https://www.aviasales.com/search/BEG0505TYO20056",
+      "google": "https://www.google.com/travel/flights?q=Flights+from+BEG+to+HND%2CNRT+on+2027-05-05+through+2027-05-20+for+6+adults&curr=EUR&hl=en"
+     }
+    }
+   }
   }
  },
  "aviasales": {
-  "checked": "2026-11-01",
+  "checked": "2026-11-02",
   "deals": [
-   {
-    "route": "BUD-TYO",
-    "source": "Aviasales",
-    "per_person": 702,
-    "total": 4212,
-    "airlines": "Air China",
-    "stops": 1,
-    "duration_min": 750,
-    "via": "",
-    "from_airport": "BUD",
-    "to_airport": "HND",
-    "dep": "2027-03-01",
-    "ret": "2027-03-20",
-    "url": "https://www.aviasales.com/search/BUD0103TYO20031?t=CA18039297001804017000000975BUDPEKHND18055764001805650500001715HNDPEKBUD_60d41fd3dbb2da75baa44ec6c705e627_64282&search_date=25102026&expected_price_uuid=01a17411-9d36-8040-a568-c92ff7a8eb8f&static_fare_key=TY%7CP0%7CH1%7CL1_2_0%7CCH1%7CR0%7CTBC1&itinerary_key=F1YMn1bSMDcN34NOn7qBlg&expected_price_source=share&expected_price_currency=eur&expected_price=702",
-    "compare": {
-     "skyscanner": "https://www.skyscanner.net/transport/flights/bud/tyoa/270301/270320/?adultsv2=6&cabinclass=economy&currency=EUR",
-     "kayak": "https://www.kayak.com/flights/BUD-TYO/2027-03-01/2027-03-20/6adults?sort=price_a",
-     "momondo": "https://www.momondo.com/flight-search/BUD-TYO/2027-03-01/2027-03-20/6adults?sort=price_a",
-     "aviasales": "https://www.aviasales.com/search/BUD0103TYO20036",
-     "google": "https://www.google.com/travel/flights?q=Flights+from+BUD+to+HND%2CNRT+on+2027-03-01+through+2027-03-20+for+6+adults&curr=EUR&hl=en"
-    },
-    "note": "keš cena za 1 putnika"
-   },
    {
     "route": "BEG-OSA",
     "source": "Aviasales",
-    "per_person": 841,
-    "total": 5046,
+    "per_person": 844,
+    "total": 5064,
     "airlines": "Hainan",
     "stops": 1,
     "duration_min": 780,
@@ -17085,7 +17594,7 @@
     "to_airport": "KIX",
     "dep": "2027-03-30",
     "ret": "2027-04-16",
-    "url": "https://www.aviasales.com/search/BEG3003OSA16041?t=HU18064044001806497100001125BEGPEKKIX18078852001807948800001480KIXPEKBEG_762470aa612d3733fc21276397d7995a_75663&search_date=01112026&expected_price_uuid=01a19681-b32d-8030-e1dc-429a7f4ee3f7&static_fare_key=TY%7CP0%7CH1%7CL1_1_23%7CCH1%7CR1%7CTBC1&itinerary_key=yUGFBmkx05Hhrp_KuxRktg&expected_price_source=share&expected_price_currency=eur&expected_price=841",
+    "url": "https://www.aviasales.com/search/BEG3003OSA16041?t=HU18064044001806497100001125BEGPEKKIX18078852001807948800001480KIXPEKBEG_762470aa612d3733fc21276397d7995a_75663&search_date=01112026&expected_price_uuid=01a19681-b32d-8030-e1dc-429a7f4ee3f7&static_fare_key=TY%7CP0%7CH1%7CL1_1_23%7CCH1%7CR1%7CTBC1&itinerary_key=yUGFBmkx05Hhrp_KuxRktg&expected_price_source=share&expected_price_currency=eur&expected_price=844",
     "compare": {
      "skyscanner": "https://www.skyscanner.net/transport/flights/beg/osaa/270330/270416/?adultsv2=6&cabinclass=economy&currency=EUR",
      "kayak": "https://www.kayak.com/flights/BEG-OSA/2027-03-30/2027-04-16/6adults?sort=price_a",
@@ -17234,33 +17743,10 @@
     "note": "keš cena za 1 putnika"
    },
    {
-    "route": "BEG-TYO",
-    "source": "Aviasales",
-    "per_person": 934,
-    "total": 5604,
-    "airlines": "Air Serbia",
-    "stops": 2,
-    "duration_min": 1140,
-    "via": "",
-    "from_airport": "BEG",
-    "to_airport": "HND",
-    "dep": "2027-03-26",
-    "ret": "2027-04-17",
-    "url": "https://www.aviasales.com/search/BEG2603TYO17041?t=TR18060222001806195600002410BEGATHSINHND18079626001808148000003510HNDDELFCOBEG_049b8e2b65dd0c519630f8e79d5740f6_84106&search_date=26102026&expected_price_uuid=01a17836-fa36-8030-684f-9a1d7ce67132&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=NwDw4WIEMLKYPNdiX40j_Q&expected_price_source=share&expected_price_currency=eur&expected_price=934",
-    "compare": {
-     "skyscanner": "https://www.skyscanner.net/transport/flights/beg/tyoa/270326/270417/?adultsv2=6&cabinclass=economy&currency=EUR",
-     "kayak": "https://www.kayak.com/flights/BEG-TYO/2027-03-26/2027-04-17/6adults?sort=price_a",
-     "momondo": "https://www.momondo.com/flight-search/BEG-TYO/2027-03-26/2027-04-17/6adults?sort=price_a",
-     "aviasales": "https://www.aviasales.com/search/BEG2603TYO17046",
-     "google": "https://www.google.com/travel/flights?q=Flights+from+BEG+to+HND%2CNRT+on+2027-03-26+through+2027-04-17+for+6+adults&curr=EUR&hl=en"
-    },
-    "note": "keš cena za 1 putnika"
-   },
-   {
     "route": "BUD-TYO",
     "source": "Aviasales",
-    "per_person": 939,
-    "total": 5634,
+    "per_person": 942,
+    "total": 5652,
     "airlines": "Lufthansa",
     "stops": 2,
     "duration_min": 1150,
@@ -17269,7 +17755,7 @@
     "to_airport": "HND",
     "dep": "2027-05-07",
     "ret": "2027-05-28",
-    "url": "https://www.aviasales.com/search/BUD0705TYO28051?t=CA18096999001809935700003510BUDFRADELHND18115128001811574000001440HNDPEKBUD_bc2948c1698591363d2412469acc524b_84435&search_date=01112026&expected_price_uuid=01a195fe-9502-8030-e2dd-f85a97d43233&static_fare_key=TY%7CP0%7CH1%7CL1_1_23%7CCH0%7CR0%7CTBC1&itinerary_key=1svDM8M5f0Te2Fb6yvx-3g&expected_price_source=share&expected_price_currency=eur&expected_price=939",
+    "url": "https://www.aviasales.com/search/BUD0705TYO28051?t=CA18096999001809935700003510BUDFRADELHND18115128001811574000001440HNDPEKBUD_bc2948c1698591363d2412469acc524b_84435&search_date=01112026&expected_price_uuid=01a195fe-9502-8030-e2dd-f85a97d43233&static_fare_key=TY%7CP0%7CH1%7CL1_1_23%7CCH0%7CR0%7CTBC1&itinerary_key=1svDM8M5f0Te2Fb6yvx-3g&expected_price_source=share&expected_price_currency=eur&expected_price=942",
     "compare": {
      "skyscanner": "https://www.skyscanner.net/transport/flights/bud/tyoa/270507/270528/?adultsv2=6&cabinclass=economy&currency=EUR",
      "kayak": "https://www.kayak.com/flights/BUD-TYO/2027-05-07/2027-05-28/6adults?sort=price_a",
@@ -17351,8 +17837,8 @@
    {
     "route": "BEG-TYO",
     "source": "Aviasales",
-    "per_person": 972,
-    "total": 5832,
+    "per_person": 976,
+    "total": 5856,
     "airlines": "Air Serbia",
     "stops": 2,
     "duration_min": 1210,
@@ -17361,7 +17847,7 @@
     "to_airport": "HND",
     "dep": "2027-04-17",
     "ret": "2027-05-06",
-    "url": "https://www.aviasales.com/search/BEG1704TYO06051?t=TR18079866001808183100002855BEGVIESINHND18096042001809736800002630HNDDELMXPBGYBEG_93e6e9daaa9beff9b2256e2c1cb437b3_87442&search_date=01112026&expected_price_uuid=01a196db-9160-8030-a335-f0c47fbe5615&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=iUd6VmZDtM-H3jgFTW-WLQ&expected_price_source=share&expected_price_currency=eur&expected_price=972",
+    "url": "https://www.aviasales.com/search/BEG1704TYO06051?t=TR18079866001808183100002855BEGVIESINHND18096042001809736800002630HNDDELMXPBGYBEG_93e6e9daaa9beff9b2256e2c1cb437b3_87442&search_date=01112026&expected_price_uuid=01a196db-9160-8030-a335-f0c47fbe5615&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=iUd6VmZDtM-H3jgFTW-WLQ&expected_price_source=share&expected_price_currency=eur&expected_price=976",
     "compare": {
      "skyscanner": "https://www.skyscanner.net/transport/flights/beg/tyoa/270417/270506/?adultsv2=6&cabinclass=economy&currency=EUR",
      "kayak": "https://www.kayak.com/flights/BEG-TYO/2027-04-17/2027-05-06/6adults?sort=price_a",
@@ -17374,8 +17860,8 @@
    {
     "route": "BEG-TYO",
     "source": "Aviasales",
-    "per_person": 982,
-    "total": 5892,
+    "per_person": 986,
+    "total": 5916,
     "airlines": "Austrian",
     "stops": 2,
     "duration_min": 830,
@@ -17384,7 +17870,7 @@
     "to_airport": "HND",
     "dep": "2027-04-23",
     "ret": "2027-05-08",
-    "url": "https://www.aviasales.com/search/BEG2304TYO08051?t=CA18084783001808602200001645BEGVIEPEKHND18097848001809858000001640HNDPEKVIEBEG_896d5a3f2245e92d754f8b79b3fa1aa8_88317&search_date=01112026&expected_price_uuid=01a1960a-8fa1-8031-6328-eff0c0b7aaab&static_fare_key=TY%7CP1%7CH0%7CL1_2_46%7CCH1%7CR0%7CTBC1&itinerary_key=Yz5WMczgEVN0nPa86McsWg&expected_price_source=share&expected_price_currency=eur&expected_price=982",
+    "url": "https://www.aviasales.com/search/BEG2304TYO08051?t=CA18084783001808602200001645BEGVIEPEKHND18097848001809858000001640HNDPEKVIEBEG_896d5a3f2245e92d754f8b79b3fa1aa8_88317&search_date=01112026&expected_price_uuid=01a1960a-8fa1-8031-6328-eff0c0b7aaab&static_fare_key=TY%7CP1%7CH0%7CL1_2_46%7CCH1%7CR0%7CTBC1&itinerary_key=Yz5WMczgEVN0nPa86McsWg&expected_price_source=share&expected_price_currency=eur&expected_price=986",
     "compare": {
      "skyscanner": "https://www.skyscanner.net/transport/flights/beg/tyoa/270423/270508/?adultsv2=6&cabinclass=economy&currency=EUR",
      "kayak": "https://www.kayak.com/flights/BEG-TYO/2027-04-23/2027-05-08/6adults?sort=price_a",
@@ -17581,6 +18067,29 @@
    {
     "route": "BEG-TYO",
     "source": "Aviasales",
+    "per_person": 1021,
+    "total": 6126,
+    "airlines": "Air Serbia",
+    "stops": 2,
+    "duration_min": 1180,
+    "via": "",
+    "from_airport": "BEG",
+    "to_airport": "HND",
+    "dep": "2027-04-02",
+    "ret": "2027-04-17",
+    "url": "https://www.aviasales.com/search/BEG0204TYO17041?t=TR18066267001806800700002480BEGATHSINHND18079626001808132700003255HNDDELMXPBEG_c68d6bf6de7a82263d3e95a2ccd0b140_91459&search_date=01112026&expected_price_uuid=01a19936-846c-8030-2a57-c28ec54e06fb&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=zzTdN6tSP70Duuk5h2ojag&expected_price_source=share&expected_price_currency=eur&expected_price=1021",
+    "compare": {
+     "skyscanner": "https://www.skyscanner.net/transport/flights/beg/tyoa/270402/270417/?adultsv2=6&cabinclass=economy&currency=EUR",
+     "kayak": "https://www.kayak.com/flights/BEG-TYO/2027-04-02/2027-04-17/6adults?sort=price_a",
+     "momondo": "https://www.momondo.com/flight-search/BEG-TYO/2027-04-02/2027-04-17/6adults?sort=price_a",
+     "aviasales": "https://www.aviasales.com/search/BEG0204TYO17046",
+     "google": "https://www.google.com/travel/flights?q=Flights+from+BEG+to+HND%2CNRT+on+2027-04-02+through+2027-04-17+for+6+adults&curr=EUR&hl=en"
+    },
+    "note": "keš cena za 1 putnika"
+   },
+   {
+    "route": "BEG-TYO",
+    "source": "Aviasales",
     "per_person": 1022,
     "total": 6132,
     "airlines": "Air Serbia",
@@ -17598,29 +18107,6 @@
      "momondo": "https://www.momondo.com/flight-search/BEG-TYO/2027-03-21/2027-04-11/6adults?sort=price_a",
      "aviasales": "https://www.aviasales.com/search/BEG2103TYO11046",
      "google": "https://www.google.com/travel/flights?q=Flights+from+BEG+to+HND%2CNRT+on+2027-03-21+through+2027-04-11+for+6+adults&curr=EUR&hl=en"
-    },
-    "note": "keš cena za 1 putnika"
-   },
-   {
-    "route": "BEG-TYO",
-    "source": "Aviasales",
-    "per_person": 1038,
-    "total": 6228,
-    "airlines": "Air Serbia",
-    "stops": 2,
-    "duration_min": 1210,
-    "via": "",
-    "from_airport": "BEG",
-    "to_airport": "HND",
-    "dep": "2027-04-07",
-    "ret": "2027-04-24",
-    "url": "https://www.aviasales.com/search/BEG0704TYO24041?t=TR18071226001807319100002855BEGVIESINHND18085674001808742600003340HNDDELLHRBCNBEG_0d20d6bcff38113357b689f7399feaa1_94304&search_date=29102026&expected_price_uuid=01a18920-173d-8040-ac0d-dafcea300553&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=AfozGngOXI4lIx8qB6W1yg&expected_price_source=share&expected_price_currency=eur&expected_price=1038",
-    "compare": {
-     "skyscanner": "https://www.skyscanner.net/transport/flights/beg/tyoa/270407/270424/?adultsv2=6&cabinclass=economy&currency=EUR",
-     "kayak": "https://www.kayak.com/flights/BEG-TYO/2027-04-07/2027-04-24/6adults?sort=price_a",
-     "momondo": "https://www.momondo.com/flight-search/BEG-TYO/2027-04-07/2027-04-24/6adults?sort=price_a",
-     "aviasales": "https://www.aviasales.com/search/BEG0704TYO24046",
-     "google": "https://www.google.com/travel/flights?q=Flights+from+BEG+to+HND%2CNRT+on+2027-04-07+through+2027-04-24+for+6+adults&curr=EUR&hl=en"
     },
     "note": "keš cena za 1 putnika"
    },
@@ -17740,25 +18226,48 @@
     "note": "keš cena za 1 putnika"
    },
    {
-    "route": "BEG-TYO",
+    "route": "BEG-OSA",
     "source": "Aviasales",
-    "per_person": 1064,
-    "total": 6384,
-    "airlines": "Austrian",
+    "per_person": 1063,
+    "total": 6378,
+    "airlines": "Air Serbia",
     "stops": 2,
-    "duration_min": 845,
+    "duration_min": 1170,
     "via": "",
     "from_airport": "BEG",
-    "to_airport": "HND",
-    "dep": "2027-03-15",
-    "ret": "2027-04-11",
-    "url": "https://www.aviasales.com/search/BEG1503TYO11041?t=CA18051087001805214000001275BEGVIEPEKHND18074520001807525200001640HNDPEKVIEBEG_541119b1c17e0d904b8676e9cfda080d_97504&search_date=25102026&expected_price_uuid=01a1732a-0523-8031-692f-20aafe8b216d&static_fare_key=TY%7CP0%7CH1%7CL1_2_0%7CCH1%7CR0%7CTBC1&itinerary_key=7zoBKSzVbEBMK8uKiCOccQ&expected_price_source=share&expected_price_currency=eur&expected_price=1064",
+    "to_airport": "KIX",
+    "dep": "2027-04-19",
+    "ret": "2027-05-06",
+    "url": "https://www.aviasales.com/search/BEG1904OSA06051?t=VN18080955001808231700001850BEGATHSINKIX18095976001809729300002615KIXHANMXPBEG_58e744af4e71403c140e00daf3ef4b4b_95843&search_date=02112026&expected_price_uuid=01a19b5d-fb85-8030-6913-9874df823738&static_fare_key=TY%7CP1%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=6ufOpUrPIF3Rd_7XHq99_Q&expected_price_source=share&expected_price_currency=eur&expected_price=1063",
     "compare": {
-     "skyscanner": "https://www.skyscanner.net/transport/flights/beg/tyoa/270315/270411/?adultsv2=6&cabinclass=economy&currency=EUR",
-     "kayak": "https://www.kayak.com/flights/BEG-TYO/2027-03-15/2027-04-11/6adults?sort=price_a",
-     "momondo": "https://www.momondo.com/flight-search/BEG-TYO/2027-03-15/2027-04-11/6adults?sort=price_a",
-     "aviasales": "https://www.aviasales.com/search/BEG1503TYO11046",
-     "google": "https://www.google.com/travel/flights?q=Flights+from+BEG+to+HND%2CNRT+on+2027-03-15+through+2027-04-11+for+6+adults&curr=EUR&hl=en"
+     "skyscanner": "https://www.skyscanner.net/transport/flights/beg/osaa/270419/270506/?adultsv2=6&cabinclass=economy&currency=EUR",
+     "kayak": "https://www.kayak.com/flights/BEG-OSA/2027-04-19/2027-05-06/6adults?sort=price_a",
+     "momondo": "https://www.momondo.com/flight-search/BEG-OSA/2027-04-19/2027-05-06/6adults?sort=price_a",
+     "aviasales": "https://www.aviasales.com/search/BEG1904OSA06056",
+     "google": "https://www.google.com/travel/flights?q=Flights+from+BEG+to+KIX+on+2027-04-19+through+2027-05-06+for+6+adults&curr=EUR&hl=en"
+    },
+    "note": "keš cena za 1 putnika"
+   },
+   {
+    "route": "BEG-OSA",
+    "source": "Aviasales",
+    "per_person": 1088,
+    "total": 6528,
+    "airlines": "Air Serbia",
+    "stops": 3,
+    "duration_min": 955,
+    "via": "",
+    "from_airport": "BEG",
+    "to_airport": "ITM",
+    "dep": "2027-04-19",
+    "ret": "2027-05-08",
+    "url": "https://www.aviasales.com/search/BEG1904OSA08051?t=D718081162001808292900002525BEGARNPEKHNDITM18098046001809925800002440KIXPVGKULSAWISTBEG_e1a2c1d603d31839e325083effa4ad0d_98091&search_date=02112026&expected_price_uuid=01a19b5d-fd56-8031-2b3d-0ee61f83b1ec&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=va7O8KnyJYd8YMLE2jinzw&expected_price_source=share&expected_price_currency=eur&expected_price=1088",
+    "compare": {
+     "skyscanner": "https://www.skyscanner.net/transport/flights/beg/osaa/270419/270508/?adultsv2=6&cabinclass=economy&currency=EUR",
+     "kayak": "https://www.kayak.com/flights/BEG-OSA/2027-04-19/2027-05-08/6adults?sort=price_a",
+     "momondo": "https://www.momondo.com/flight-search/BEG-OSA/2027-04-19/2027-05-08/6adults?sort=price_a",
+     "aviasales": "https://www.aviasales.com/search/BEG1904OSA08056",
+     "google": "https://www.google.com/travel/flights?q=Flights+from+BEG+to+KIX+on+2027-04-19+through+2027-05-08+for+6+adults&curr=EUR&hl=en"
     },
     "note": "keš cena za 1 putnika"
    },
@@ -17786,25 +18295,25 @@
     "note": "keš cena za 1 putnika"
    },
    {
-    "route": "BEG-OSA",
+    "route": "BEG-TYO",
     "source": "Aviasales",
-    "per_person": 1110,
-    "total": 6660,
+    "per_person": 1114,
+    "total": 6684,
     "airlines": "Air Serbia",
-    "stops": 3,
-    "duration_min": 1205,
+    "stops": 2,
+    "duration_min": 1225,
     "via": "",
     "from_airport": "BEG",
-    "to_airport": "ITM",
-    "dep": "2027-03-26",
-    "ret": "2027-04-17",
-    "url": "https://www.aviasales.com/search/BEG2603OSA17041?t=TR18060222001806218700002795BEGATHSINHNDITM18079470001808132400003510ITMHNDDELFCOBEG_70ce570b6c5c1888e1ceb9d6a834f046_99992&search_date=26102026&expected_price_uuid=01a17838-544f-8030-6e60-c558c09e32f2&static_fare_key=TY%7CP1%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=Fj56qpx3ZQWVlmL_-vIG4w&expected_price_source=share&expected_price_currency=eur&expected_price=1110",
+    "to_airport": "HND",
+    "dep": "2027-04-07",
+    "ret": "2027-04-24",
+    "url": "https://www.aviasales.com/search/BEG0704TYO24041?t=AI18070797001807257300002540BEGCDGDELHND18085776001808668500001935NRTUBNISTSAWBEG_0deabcc031f41b8097ade17efffd24c9_99804&search_date=01112026&expected_price_uuid=01a197e1-a68b-8030-645b-5c67affd7232&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=xSl72shko-SzO6WZBtJ-Fw&expected_price_source=share&expected_price_currency=eur&expected_price=1114",
     "compare": {
-     "skyscanner": "https://www.skyscanner.net/transport/flights/beg/osaa/270326/270417/?adultsv2=6&cabinclass=economy&currency=EUR",
-     "kayak": "https://www.kayak.com/flights/BEG-OSA/2027-03-26/2027-04-17/6adults?sort=price_a",
-     "momondo": "https://www.momondo.com/flight-search/BEG-OSA/2027-03-26/2027-04-17/6adults?sort=price_a",
-     "aviasales": "https://www.aviasales.com/search/BEG2603OSA17046",
-     "google": "https://www.google.com/travel/flights?q=Flights+from+BEG+to+KIX+on+2027-03-26+through+2027-04-17+for+6+adults&curr=EUR&hl=en"
+     "skyscanner": "https://www.skyscanner.net/transport/flights/beg/tyoa/270407/270424/?adultsv2=6&cabinclass=economy&currency=EUR",
+     "kayak": "https://www.kayak.com/flights/BEG-TYO/2027-04-07/2027-04-24/6adults?sort=price_a",
+     "momondo": "https://www.momondo.com/flight-search/BEG-TYO/2027-04-07/2027-04-24/6adults?sort=price_a",
+     "aviasales": "https://www.aviasales.com/search/BEG0704TYO24046",
+     "google": "https://www.google.com/travel/flights?q=Flights+from+BEG+to+HND%2CNRT+on+2027-04-07+through+2027-04-24+for+6+adults&curr=EUR&hl=en"
     },
     "note": "keš cena za 1 putnika"
    },
@@ -17851,6 +18360,52 @@
      "momondo": "https://www.momondo.com/flight-search/BEG-OSA/2027-05-06/2027-05-21/6adults?sort=price_a",
      "aviasales": "https://www.aviasales.com/search/BEG0605OSA21056",
      "google": "https://www.google.com/travel/flights?q=Flights+from+BEG+to+KIX+on+2027-05-06+through+2027-05-21+for+6+adults&curr=EUR&hl=en"
+    },
+    "note": "keš cena za 1 putnika"
+   },
+   {
+    "route": "BEG-OSA",
+    "source": "Aviasales",
+    "per_person": 1144,
+    "total": 6864,
+    "airlines": "Air Serbia",
+    "stops": 2,
+    "duration_min": 870,
+    "via": "",
+    "from_airport": "BEG",
+    "to_airport": "KIX",
+    "dep": "2027-04-21",
+    "ret": "2027-05-06",
+    "url": "https://www.aviasales.com/search/BEG2104OSA06051?t=VN18083142001808482200002380BEGBUDPVGKIX18095976001809729300002615KIXHANMXPBEG_64f9e576800b16c2de6e9ffb642094b7_103213&search_date=02112026&expected_price_uuid=01a19b5e-0138-8030-ec42-bb7155d13b3b&static_fare_key=TY%7CP1%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=bUYJgIKJfPTkIjDXCvYF5A&expected_price_source=share&expected_price_currency=eur&expected_price=1144",
+    "compare": {
+     "skyscanner": "https://www.skyscanner.net/transport/flights/beg/osaa/270421/270506/?adultsv2=6&cabinclass=economy&currency=EUR",
+     "kayak": "https://www.kayak.com/flights/BEG-OSA/2027-04-21/2027-05-06/6adults?sort=price_a",
+     "momondo": "https://www.momondo.com/flight-search/BEG-OSA/2027-04-21/2027-05-06/6adults?sort=price_a",
+     "aviasales": "https://www.aviasales.com/search/BEG2104OSA06056",
+     "google": "https://www.google.com/travel/flights?q=Flights+from+BEG+to+KIX+on+2027-04-21+through+2027-05-06+for+6+adults&curr=EUR&hl=en"
+    },
+    "note": "keš cena za 1 putnika"
+   },
+   {
+    "route": "BEG-OSA",
+    "source": "Aviasales",
+    "per_person": 1157,
+    "total": 6942,
+    "airlines": "Air Serbia",
+    "stops": 2,
+    "duration_min": 870,
+    "via": "",
+    "from_airport": "BEG",
+    "to_airport": "KIX",
+    "dep": "2027-04-21",
+    "ret": "2027-05-09",
+    "url": "https://www.aviasales.com/search/BEG2104OSA09051?t=TR18083142001808482200002380BEGBUDPVGKIX18099057001810052100002860KIXTPESINVIEBEG_e69754c6aaea5e41e6a3e07d82520628_104342&search_date=02112026&expected_price_uuid=01a19b5e-0238-8030-e44d-4e075a2f4c6d&static_fare_key=TY%7CP1%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=CVJ4G1fFwPTPvJ2cJcpS6w&expected_price_source=share&expected_price_currency=eur&expected_price=1157",
+    "compare": {
+     "skyscanner": "https://www.skyscanner.net/transport/flights/beg/osaa/270421/270509/?adultsv2=6&cabinclass=economy&currency=EUR",
+     "kayak": "https://www.kayak.com/flights/BEG-OSA/2027-04-21/2027-05-09/6adults?sort=price_a",
+     "momondo": "https://www.momondo.com/flight-search/BEG-OSA/2027-04-21/2027-05-09/6adults?sort=price_a",
+     "aviasales": "https://www.aviasales.com/search/BEG2104OSA09056",
+     "google": "https://www.google.com/travel/flights?q=Flights+from+BEG+to+KIX+on+2027-04-21+through+2027-05-09+for+6+adults&curr=EUR&hl=en"
     },
     "note": "keš cena za 1 putnika"
    },
@@ -17945,10 +18500,56 @@
      "google": "https://www.google.com/travel/flights?q=Flights+from+BEG+to+KIX+on+2027-03-31+through+2027-04-17+for+6+adults&curr=EUR&hl=en"
     },
     "note": "keš cena za 1 putnika"
+   },
+   {
+    "route": "BEG-OSA",
+    "source": "Aviasales",
+    "per_person": 1237,
+    "total": 7422,
+    "airlines": "Air Serbia",
+    "stops": 2,
+    "duration_min": 1170,
+    "via": "",
+    "from_airport": "BEG",
+    "to_airport": "KIX",
+    "dep": "2027-04-01",
+    "ret": "2027-04-16",
+    "url": "https://www.aviasales.com/search/BEG0104OSA16041?t=JU18065850001806762900002545BEGATHSINKIX18079038001808062200003060KIXPVGBEG_aa9698f4b55fb404c8c4830568d828a2_111928&search_date=02112026&expected_price_uuid=01a19b63-d158-8030-2546-2f4a7ef6dd79&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=yeabSDJpeOlGMT_g5U1Jyw&expected_price_source=share&expected_price_currency=eur&expected_price=1237",
+    "compare": {
+     "skyscanner": "https://www.skyscanner.net/transport/flights/beg/osaa/270401/270416/?adultsv2=6&cabinclass=economy&currency=EUR",
+     "kayak": "https://www.kayak.com/flights/BEG-OSA/2027-04-01/2027-04-16/6adults?sort=price_a",
+     "momondo": "https://www.momondo.com/flight-search/BEG-OSA/2027-04-01/2027-04-16/6adults?sort=price_a",
+     "aviasales": "https://www.aviasales.com/search/BEG0104OSA16046",
+     "google": "https://www.google.com/travel/flights?q=Flights+from+BEG+to+KIX+on+2027-04-01+through+2027-04-16+for+6+adults&curr=EUR&hl=en"
+    },
+    "note": "keš cena za 1 putnika"
+   },
+   {
+    "route": "BEG-OSA",
+    "source": "Aviasales",
+    "per_person": 1393,
+    "total": 8358,
+    "airlines": "Pegasus",
+    "stops": 2,
+    "duration_min": 960,
+    "via": "",
+    "from_airport": "BEG",
+    "to_airport": "KIX",
+    "dep": "2027-04-02",
+    "ret": "2027-04-17",
+    "url": "https://www.aviasales.com/search/BEG0204OSA17041?t=JU18066846001806925800003600BEGSAWISTAUHKIX18079656001808062200002030ITMHNDNRTPVGBEG_b5592032832550c4effc927c63792bf6_126045&search_date=02112026&expected_price_uuid=01a19b63-ce7a-8030-23bb-3130416fb284&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=wnrQev12JTiyc2Pg0tYW1A&expected_price_source=share&expected_price_currency=eur&expected_price=1393",
+    "compare": {
+     "skyscanner": "https://www.skyscanner.net/transport/flights/beg/osaa/270402/270417/?adultsv2=6&cabinclass=economy&currency=EUR",
+     "kayak": "https://www.kayak.com/flights/BEG-OSA/2027-04-02/2027-04-17/6adults?sort=price_a",
+     "momondo": "https://www.momondo.com/flight-search/BEG-OSA/2027-04-02/2027-04-17/6adults?sort=price_a",
+     "aviasales": "https://www.aviasales.com/search/BEG0204OSA17046",
+     "google": "https://www.google.com/travel/flights?q=Flights+from+BEG+to+KIX+on+2027-04-02+through+2027-04-17+for+6+adults&curr=EUR&hl=en"
+    },
+    "note": "keš cena za 1 putnika"
    }
   ],
   "markets": {
-   "ru": 96
+   "ru": 108
   }
  },
  "best": {
@@ -18043,10 +18644,10 @@
     "google": "https://www.google.com/travel/flights?q=Flights+from+BEG+to+HND%2CNRT+on+2027-05-05+through+2027-05-25+for+6+adults&curr=EUR&hl=en"
    },
    "note": "keš cena za 1 putnika",
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   }
  },
- "updated": "2026-11-01T11:57+00:00",
+ "updated": "2026-11-02T13:43+00:00",
  "config": {
   "adults": 6,
   "target": 750.0,
@@ -18061,7 +18662,7 @@
   ],
   "min_stay": 15,
   "combos_total": 228,
-  "combos_checked": 209,
+  "combos_checked": 216,
   "sources": [
    "Google Flights",
    "Aviasales"
